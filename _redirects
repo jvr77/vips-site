@@ -1,23 +1,18 @@
-# _redirects — Netlify
-# Colocar este arquivo na raiz da pasta publicada (junto do index.html)
-# Formato: origem  destino  código
+# Redirects - Netlify
+# URLs antigas do site (indexadas no Google)
 
-# URLs antigas confirmadas como 404 (indexadas no Google)
-/empresa            /#intro     301
-/empresa/           /#intro     301
-/localizacao        /#contato   301
-/localizacao/       /#contato   301
+/empresa          /#intro     301!
+/empresa/*        /#intro     301!
+/localizacao      /#contato   301!
+/localizacao/*    /#contato   301!
+/servicos         /#servicos  301!
+/servicos/*       /#servicos  301!
+/contato          /#contato   301!
+/contato/*        /#contato   301!
 
-# Padrões comuns do site antigo — manter mesmo que já não existam links
-/servicos           /#servicos  301
-/servicos/          /#servicos  301
-/contato            /#contato   301
-/contato/           /#contato   301
+# Completar com a lista de 404 do Google Search Console
+# (Indexacao > Paginas > "Nao encontrada (404)")
 
-# IMPORTANTE: complete esta lista com o Google Search Console
-# (Indexação > Páginas > "Não encontrada (404)") e adicione uma
-# linha por URL antiga, apontando para a home ou para a âncora
-# mais próxima do conteúdo original.
-
-# Página de serviço: variante .html -> URL limpa
+# Pagina de servico: variante .html -> URL limpa
 /trocar-de-contador.html   /trocar-de-contador   301
+
