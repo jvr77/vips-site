@@ -351,6 +351,20 @@
     .passos-3::before { left: 16%; width: 68%; }
     @media (max-width: 860px) { .grid-2 { grid-template-columns: 1fr; } .passos-3 { grid-template-columns: 1fr; } }
     .sec-navy a.link-inline { color: var(--gold); text-decoration: underline; text-underline-offset: 3px; }
+
+    /* ─── VEJA TAMBÉM ─── */
+    .vt-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 2px; margin-top: 40px; }
+    .vt-card { display: block; background: var(--white); padding: 34px 30px; position: relative; transition: transform 0.2s, box-shadow 0.2s; }
+    .vt-card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px; background: var(--gold); transform: scaleX(0); transform-origin: left; transition: transform 0.25s; }
+    .vt-card:hover::before { transform: scaleX(1); }
+    .vt-card:hover { transform: translateY(-4px); box-shadow: 0 12px 40px rgba(0,33,71,0.1); }
+    .vt-card .seg-nome { font-size: 1.1rem; font-weight: 700; color: var(--navy); margin-bottom: 10px; line-height: 1.2; }
+    .vt-card .seg-desc { font-size: 0.9rem; color: var(--mid); line-height: 1.65; margin-bottom: 18px; }
+    .vt-card .seg-cta { font-size: 0.72rem; letter-spacing: 0.14em; text-transform: uppercase; font-weight: 600; color: var(--gold); }
+    .vt-card .seg-cta::after { content: ' \2192'; }
+    .vt-todos { margin-top: 28px; font-size: 0.92rem; color: var(--mid); }
+    .vt-todos a { color: var(--navy); text-decoration: underline; text-underline-offset: 3px; }
+    @media (max-width: 860px) { .vt-grid { grid-template-columns: 1fr; } }
 </style>
 </head>
 <body>
@@ -469,6 +483,27 @@
   </div>
 </section>
 
+<!-- VEJA TAMBÉM -->
+<section class="sec sec-gray">
+  <div class="sec-inner">
+    <p class="sec-label">Veja também</p>
+    <h2 class="sec-title">Outros setores<br>que a VIPS atende</h2>
+    <div class="vt-grid">
+      <a href="/contabilidade-para-servicos-profissionais" class="vt-card">
+        <h3 class="seg-nome">Serviços profissionais</h3>
+        <p class="seg-desc">Advocacia, engenharia, arquitetura e consultoria. ISS fixo, retenções compensadas e lucro distribuído sob a lei nova.</p>
+        <span class="seg-cta">Contabilidade para profissionais</span>
+      </a>
+      <a href="/contabilidade-para-holdings" class="vt-card">
+        <h3 class="seg-nome">Holdings patrimoniais</h3>
+        <p class="seg-desc">Imóveis, aluguéis e sucessão organizados na pessoa jurídica, com a conta feita antes de abrir.</p>
+        <span class="seg-cta">Holding patrimonial</span>
+      </a>
+    </div>
+    <p class="vt-todos"><a href="/#segmentos">Ver todos os segmentos</a></p>
+  </div>
+</section>
+
 <!-- CTA FINAL -->
 <section class="cta-final">
   <div class="cta-final-inner">
@@ -484,10 +519,11 @@
   <div class="footer-links">
     <a href="/#intro">Sobre</a>
     <a href="/#servicos">Serviços</a>
+    <a href="/#segmentos">Segmentos</a>
     <a href="/#contato">Contato</a>
     <a href="/privacidade">Privacidade</a>
   </div>
-  <div class="footer-copy">© 1995 — 2026 VIPS Consultores. Todos os direitos reservados.</div>
+  <div class="footer-copy">© 1995–2026 VIPS Contabilidade. Todos os direitos reservados.</div>
 </footer>
 
 <script>
@@ -548,5 +584,17 @@ document.addEventListener('click', function (e) {
 })();
 </script>
 
+
+<!-- Botão fixo de WhatsApp -->
+<style>
+  .wa-fab { position: fixed; right: 18px; bottom: 18px; z-index: 900; width: 52px; height: 52px;
+            border-radius: 50%; background: #002147; color: #fff; border: 1px solid rgba(170,152,96,0.55);
+            display: flex; align-items: center; justify-content: center;
+            box-shadow: 0 6px 20px rgba(0,33,71,0.25); transition: transform 0.2s, background 0.2s; }
+  .wa-fab:hover { transform: translateY(-2px); background: #0a2d58; }
+  @media (max-width: 480px) { .wa-fab { right: 14px; bottom: 14px; width: 48px; height: 48px; } }
+  @media print { .wa-fab { display: none; } }
+</style>
+<a href="https://api.whatsapp.com/send/?phone=5511956081408" class="wa-fab" target="_blank" rel="noopener" aria-label="Falar com a VIPS pelo WhatsApp"><svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true" focusable="false"><path fill="currentColor" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></a>
 </body>
 </html>

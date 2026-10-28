@@ -40,7 +40,8 @@
     "@type": "AccountingService",
     "@id": "https://vipsconsultores.com.br/#organizacao",
     "name": "VIPS Contabilidade",
-    "legalName": "Vip's Organização Contábil Sociedade Simples",
+    "legalName": "VIP'S Organização Contábil Sociedade Simples",
+      "taxID": "08.261.303/0001-70",
     "url": "https://vipsconsultores.com.br/",
     "logo": "https://vipsconsultores.com.br/og-image.png",
     "image": "https://vipsconsultores.com.br/og-image.png",
@@ -49,13 +50,13 @@
     "foundingDate": "1995",
     "founder": {
       "@type": "Person",
-      "name": "Manoel Ramos"
+      "name": "Manoel Ramos da Silva"
     },
     "email": "contato@vipsconsultores.com.br",
     "telephone": "+55-11-95608-1408",
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "Rua Cantagalo, 74 — 5º andar, Conjuntos 501/502/503/504/505, Silvio Romero Plaza",
+      "streetAddress": "Rua Cantagalo, 74, 5º andar, Conjuntos 501/502/503/504/505, Silvio Romero Plaza",
       "addressLocality": "São Paulo",
       "addressRegion": "SP",
       "postalCode": "03319-000",
@@ -71,9 +72,7 @@
       "opens": "08:00",
       "closes": "17:30"
     },
-    "sameAs": [
-      "https://br.linkedin.com/company/vip-s-contabilidade"
-    ],
+    "sameAs": ["https://br.linkedin.com/company/vip-s-contabilidade", "https://www.instagram.com/vipscontabilidade/"],
     "knowsAbout": [
       "Contabilidade",
       "Planejamento tributário",
@@ -96,7 +95,7 @@
         "name": "Minha empresa está no regime certo? Como saber se estou pagando imposto demais?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "A maioria dos donos de empresa não sabe, e não é culpa deles. O regime certo depende do faturamento, da atividade, da margem e de como a empresa está estruturada. A gente faz essa análise antes de qualquer proposta. Não é raro encontrar empresa pagando 30% mais imposto do que deveria."
+          "text": "A maioria dos donos de empresa não sabe, e não é culpa deles. O regime certo depende do faturamento, da atividade, da margem e de como a empresa está estruturada. A gente faz essa análise antes de qualquer proposta. Na nossa experiência, é comum encontrar empresa pagando mais de 30% acima do imposto que deveria."
         }
       },
       {
@@ -120,7 +119,7 @@
         "name": "Quanto custa o serviço da VIPS?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Depende do tamanho e da complexidade da empresa. Por isso a gente faz o diagnóstico antes de apresentar qualquer número. O planejamento tributário incluso costuma gerar uma economia que paga o serviço com folga."
+          "text": "Depende do tamanho e da complexidade da empresa. Por isso a gente faz o diagnóstico antes de apresentar qualquer número. Na prática, o planejamento tributário incluso costuma gerar uma economia que paga o serviço com folga."
         }
       },
       {
@@ -136,7 +135,7 @@
         "name": "A VIPS atende empresas de que tamanho?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "PMEs em crescimento até empresas com faturamento próximo de R$ 300 milhões. Atendemos quem precisa de uma contabilidade à altura da empresa que tem, não de um serviço básico que funciona enquanto a empresa é pequena."
+          "text": "De PMEs em crescimento a empresas já consolidadas. Atendemos quem precisa de uma contabilidade à altura da empresa que tem, não de um serviço básico que funciona enquanto a empresa é pequena."
         }
       },
       {
@@ -144,7 +143,7 @@
         "name": "O que é planejamento tributário e por que a VIPS inclui para todos os clientes?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "É o trabalho de entender legalmente como sua empresa pode pagar menos: regime certo, benefícios fiscais aplicáveis e estrutura de operação eficiente. Incluímos porque não faz sentido fazer a contabilidade de uma empresa sem isso. É parte do serviço, não um extra."
+          "text": "É o trabalho de entender legalmente como sua empresa pode pagar menos: regime certo, benefícios fiscais aplicáveis e estrutura de operação eficiente. Incluímos porque não faz sentido fazer a contabilidade de uma empresa sem isso. Por isso ele vem junto com o serviço, sem cobrança à parte."
         }
       },
       {
@@ -927,12 +926,18 @@
     <!-- Drone Tatuapé / Centro Empresarial Burgos - São Paulo -->
     <iframe
       title="Vídeo aéreo do Tatuapé" aria-hidden="true" tabindex="-1"
-      src="https://www.youtube-nocookie.com/embed/kmWjoPIAUQw?autoplay=1&mute=1&loop=1&playlist=kmWjoPIAUQw&controls=0&showinfo=0&rel=0&disablekb=1&modestbranding=1&playsinline=1&cc_load_policy=0&iv_load_policy=3"
+      data-src="https://www.youtube-nocookie.com/embed/kmWjoPIAUQw?autoplay=1&mute=1&loop=1&playlist=kmWjoPIAUQw&controls=0&showinfo=0&rel=0&disablekb=1&modestbranding=1&playsinline=1&cc_load_policy=0&iv_load_policy=3"
       frameborder="0"
       allow="autoplay; encrypted-media"
       allowfullscreen
       style="position:absolute;inset:-60px;width:calc(100% + 120px);height:calc(100% + 120px);pointer-events:none;"
     ></iframe>
+    <script>
+      (function () {
+        var f = document.querySelector('.hero-video-bg iframe[data-src]');
+        if (f && window.matchMedia('(min-width: 861px)').matches) { f.src = f.getAttribute('data-src'); }
+      })();
+    </script>
   </div>
   <div class="hero-left">
     <div class="hero-eyebrow fade-up d1">São Paulo · Desde 1995</div>
@@ -1005,9 +1010,9 @@
   </div>
   <div class="right">
     <h2 class="intro-headline">
-      Contador bom<br>
-      não é o que entrega<br>
-      guia. É o que evita<br>
+      Entregar guia no prazo<br>
+      é o mínimo. O contador<br>
+      bom evita<br>
       <span class="accent">o problema antes.</span>
     </h2>
     <p class="intro-body">
@@ -1479,7 +1484,7 @@
           Minha empresa está no regime certo? Como saber se estou pagando imposto demais?
           <span class="faq-icon">+</span>
         </button>
-        <div class="faq-a">A maioria dos donos de empresa não sabe, e não é culpa deles. O regime certo depende do faturamento, da atividade, da margem e de como a empresa está estruturada. A gente faz essa análise antes de qualquer proposta. Não é raro encontrar empresa pagando 30% mais imposto do que deveria.</div>
+        <div class="faq-a">A maioria dos donos de empresa não sabe, e não é culpa deles. O regime certo depende do faturamento, da atividade, da margem e de como a empresa está estruturada. A gente faz essa análise antes de qualquer proposta. Na nossa experiência, é comum encontrar empresa pagando mais de 30% acima do imposto que deveria.</div>
       </div>
 
       <div class="faq-item">
@@ -1487,7 +1492,7 @@
           Quero trocar de contador. Como funciona a migração?
           <span class="faq-icon">+</span>
         </button>
-        <div class="faq-a">A gente cuida de tudo. Você não precisa lidar com o contador anterior nem com burocracia de transição. Resgatamos a documentação, analisamos a situação atual e estruturamos a migração sem que suas obrigações parem.</div>
+        <div class="faq-a">A gente cuida de tudo. Você não precisa lidar com o contador anterior nem com burocracia de transição. Resgatamos a documentação, analisamos a situação atual e estruturamos a migração sem que suas obrigações parem. <a href="/trocar-de-contador" style="color:var(--navy); text-decoration:underline; text-underline-offset:3px;">Veja como funciona a migração</a>.</div>
       </div>
 
       <div class="faq-item">
@@ -1503,7 +1508,7 @@
           Quanto custa o serviço da VIPS?
           <span class="faq-icon">+</span>
         </button>
-        <div class="faq-a">Depende do tamanho e da complexidade da empresa. Por isso a gente faz o diagnóstico antes de apresentar qualquer número. O que posso dizer: o planejamento tributário incluso costuma gerar uma economia que paga o serviço com folga.</div>
+        <div class="faq-a">Depende do tamanho e da complexidade da empresa. Por isso a gente faz o diagnóstico antes de apresentar qualquer número. Na prática, o planejamento tributário incluso costuma gerar uma economia que paga o serviço com folga.</div>
       </div>
 
       <div class="faq-item">
@@ -1519,7 +1524,7 @@
           A VIPS atende empresas de que tamanho?
           <span class="faq-icon">+</span>
         </button>
-        <div class="faq-a">PMEs em crescimento até empresas com faturamento próximo de R$ 300 milhões. Atendemos quem precisa de uma contabilidade à altura da empresa que tem, não de um serviço básico que funciona enquanto a empresa é pequena.</div>
+        <div class="faq-a">De PMEs em crescimento a empresas já consolidadas. Atendemos quem precisa de uma contabilidade à altura da empresa que tem, não de um serviço básico que funciona enquanto a empresa é pequena.</div>
       </div>
 
       <div class="faq-item">
@@ -1527,7 +1532,7 @@
           O que é planejamento tributário e por que a VIPS inclui para todos os clientes?
           <span class="faq-icon">+</span>
         </button>
-        <div class="faq-a">É o trabalho de entender legalmente como sua empresa pode pagar menos: regime certo, benefícios fiscais aplicáveis e estrutura de operação eficiente. Incluímos porque não faz sentido fazer a contabilidade de uma empresa sem isso. É parte do serviço, não um extra.</div>
+        <div class="faq-a">É o trabalho de entender legalmente como sua empresa pode pagar menos: regime certo, benefícios fiscais aplicáveis e estrutura de operação eficiente. Incluímos porque não faz sentido fazer a contabilidade de uma empresa sem isso. Por isso ele vem junto com o serviço, sem cobrança à parte.</div>
       </div>
 
       <div class="faq-item">
@@ -1552,7 +1557,7 @@
     <div>
       <div class="contact-item">
         <span class="ci-label">Endereço</span>
-        <span class="ci-value">Rua Cantagalo, 74 — 5º andar · Silvio Romero Plaza<br>Conjuntos 501/502/503/504/505 — Tatuapé<br>CEP: 03319-000 · São Paulo / SP</span>
+        <span class="ci-value">Rua Cantagalo, 74, 5º andar · Silvio Romero Plaza<br>Conjuntos 501/502/503/504/505, Tatuapé<br>CEP: 03319-000 · São Paulo / SP</span>
       </div>
       <div class="contact-item">
         <span class="ci-label">E-mail</span>
@@ -1695,10 +1700,11 @@
   <div class="footer-links">
     <a href="#intro">Sobre</a>
     <a href="#servicos">Serviços</a>
+    <a href="#segmentos">Segmentos</a>
     <a href="#contato">Contato</a>
     <a href="/privacidade">Privacidade</a>
   </div>
-  <div class="footer-copy">© 1995 — 2026 VIPS Consultores. Todos os direitos reservados.</div>
+  <div class="footer-copy">© 1995–2026 VIPS Contabilidade. Todos os direitos reservados.</div>
 </footer>
 
 <!-- LEAD CAPTURE MODAL -->
@@ -1845,5 +1851,17 @@ document.addEventListener('click', function (e) {
 })();
 </script>
 
+
+<!-- Botão fixo de WhatsApp -->
+<style>
+  .wa-fab { position: fixed; right: 18px; bottom: 18px; z-index: 900; width: 52px; height: 52px;
+            border-radius: 50%; background: #002147; color: #fff; border: 1px solid rgba(170,152,96,0.55);
+            display: flex; align-items: center; justify-content: center;
+            box-shadow: 0 6px 20px rgba(0,33,71,0.25); transition: transform 0.2s, background 0.2s; }
+  .wa-fab:hover { transform: translateY(-2px); background: #0a2d58; }
+  @media (max-width: 480px) { .wa-fab { right: 14px; bottom: 14px; width: 48px; height: 48px; } }
+  @media print { .wa-fab { display: none; } }
+</style>
+<a href="https://api.whatsapp.com/send/?phone=5511956081408" class="wa-fab" target="_blank" rel="noopener" aria-label="Falar com a VIPS pelo WhatsApp"><svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true" focusable="false"><path fill="currentColor" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></a>
 </body>
 </html>
