@@ -1,0 +1,39 @@
+# Avisa Bing (e demais buscadores do IndexNow) sempre que uma pagina muda.
+name: IndexNow
+
+on:
+  push:
+    branches: [main]
+    paths: ['**.html', 'sitemap.xml']
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+      - name: Espera o deploy da Netlify
+        run: sleep 120
+      - name: Envia as paginas alteradas
+        env:
+          KEY: e71b763996cdb8941febb185c612ee56
+          HOST: vipsconsultores.com.br
+        run: |
+          set -e
+          FILES=$(git diff --name-only HEAD~1 HEAD -- '*.html' | grep -v '^404.html$' || true)
+          URLS=""
+          for f in $FILES; do
+            [ -f "$f" ] || continue
+            slug="${f%.html}"
+            if [ "$slug" = "index" ]; then u="https://$HOST/"; else u="https://$HOST/$slug"; fi
+            URLS="$URLS\"$u\","
+          done
+          if git diff --name-only HEAD~1 HEAD | grep -q '^sitemap.xml$'; then
+            for u in $(grep -o '<loc>[^<]*</loc>' sitemap.xml | sed 's/<[^>]*>//g'); do URLS="$URLS\"$u\","; done
+          fi
+          URLS="${URLS%,}"
+          if [ -z "$URLS" ]; then echo "Nada para enviar"; exit 0; fi
+          BODY="{\"host\":\"$HOST\",\"key\":\"$KEY\",\"keyLocation\":\"https://$HOST/$KEY.txt\",\"urlList\":[$URLS]}"
+          echo "$BODY"
+          curl -sS -o /dev/null -w "IndexNow HTTP %{http_code}\n" -X POST "https://api.indexnow.org/indexnow" -H "Content-Type: application/json; charset=utf-8" -d "$BODY"
