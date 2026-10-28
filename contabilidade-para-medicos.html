@@ -507,5 +507,46 @@ document.addEventListener('click', function (e) {
 });
 </script>
 
+
+<!-- Aviso de cookies (LGPD) -->
+<style>
+  #ck { position: fixed; left: 16px; bottom: 16px; z-index: 9999; max-width: 340px;
+        background: #002147; color: rgba(255,255,255,0.85); border: 1px solid rgba(170,152,96,0.35);
+        border-radius: 8px; padding: 12px 14px; font: 400 12px/1.5 Inter, -apple-system, sans-serif;
+        box-shadow: 0 6px 24px rgba(0,0,0,0.18); display: none; }
+  #ck a { color: #AA9860; text-decoration: underline; text-underline-offset: 2px; }
+  #ck .ck-b { display: flex; gap: 8px; margin-top: 8px; }
+  #ck button { font: 600 11px Inter, sans-serif; letter-spacing: 0.04em; border-radius: 4px;
+               padding: 6px 12px; cursor: pointer; border: 1px solid #AA9860; }
+  #ck .ck-ok { background: #AA9860; color: #002147; }
+  #ck .ck-no { background: transparent; color: rgba(255,255,255,0.75); border-color: rgba(255,255,255,0.25); }
+  @media (max-width: 480px) { #ck { left: 12px; right: 12px; bottom: 12px; max-width: none; } }
+</style>
+<div id="ck" role="region" aria-label="Aviso de cookies">
+  Usamos cookies de análise para entender como o site é usado. <a href="/privacidade">Saiba mais</a>.
+  <div class="ck-b">
+    <button type="button" class="ck-ok">Ok</button>
+    <button type="button" class="ck-no">Recusar</button>
+  </div>
+</div>
+<script>
+(function () {
+  var KEY = 'vips_ck', GA = 'G-FN7YP6WKZQ', v = null;
+  try { v = localStorage.getItem(KEY); } catch (e) {}
+  if (v === 'no') { window['ga-disable-' + GA] = true; }
+  var box = document.getElementById('ck');
+  if (!v && box) { box.style.display = 'block'; }
+  function save(val) { try { localStorage.setItem(KEY, val); } catch (e) {} if (box) box.style.display = 'none'; }
+  if (box) {
+    box.querySelector('.ck-ok').addEventListener('click', function () { save('ok'); });
+    box.querySelector('.ck-no').addEventListener('click', function () {
+      save('no');
+      window['ga-disable-' + GA] = true;
+      if (typeof window.gtag === 'function') { window.gtag('consent', 'update', { analytics_storage: 'denied', ad_storage: 'denied' }); }
+    });
+  }
+})();
+</script>
+
 </body>
 </html>
