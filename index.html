@@ -862,6 +862,10 @@
   .seg-mais { text-align: center; font-size: 0.9rem; color: var(--mid); line-height: 1.7; max-width: 680px; margin: 44px auto 0; }
   @media (max-width: 1024px) { .seg-grid { grid-template-columns: repeat(2, 1fr); } }
   @media (max-width: 640px) { #segmentos { padding: 80px 24px; } .seg-grid { grid-template-columns: 1fr; } }
+
+  /* CREDENCIAIS com 6 selos */
+  .cred-selos { display: grid; grid-template-columns: repeat(3, 1fr); }
+  @media (max-width: 640px) { .cred-selos { grid-template-columns: repeat(2, 1fr); width: 100%; } }
 </style>
 </head>
 <body>
@@ -1304,10 +1308,25 @@
 <section id="credenciais">
   <div class="cred-inner fade-up">
     <div class="cred-texto">
-      <h3>Certificação, tecnologia e privacidade</h3>
-      <p>Certificação global de excelência em gestão da qualidade, parceiro Thomson Reuters há mais de 10 anos e conformidade total com a LGPD. A estrutura que clientes sérios exigem.</p>
+      <h3>Credenciais e estrutura</h3>
+      <p>Trinta anos de operação contínua, 200 empresas atendidas e uma equipe de 22 especialistas por área. Certificação global de gestão da qualidade, parceria de mais de dez anos com a Thomson Reuters e conformidade com a LGPD. A estrutura que clientes sérios exigem.</p>
     </div>
     <div class="cred-selos">
+      <div class="cred-selo">
+        <p class="cred-selo-title">Desde</p>
+        <p class="cred-selo-name">1995</p>
+        <p class="cred-selo-sub">30 anos de operação</p>
+      </div>
+      <div class="cred-selo">
+        <p class="cred-selo-title">Carteira ativa</p>
+        <p class="cred-selo-name">200 empresas</p>
+        <p class="cred-selo-sub">atendidas hoje</p>
+      </div>
+      <div class="cred-selo">
+        <p class="cred-selo-title">Equipe</p>
+        <p class="cred-selo-name">22 especialistas</p>
+        <p class="cred-selo-sub">por área de atuação</p>
+      </div>
       <div class="cred-selo">
         <p class="cred-selo-title">Certificação</p>
         <p class="cred-selo-name">Global</p>
