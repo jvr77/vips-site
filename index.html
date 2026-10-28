@@ -841,7 +841,28 @@
     /* MODAL */
     .modal-box { padding: 32px 24px; }
   }
-  </style>
+  
+  /* SEGMENTOS (Quem atendemos) */
+  #segmentos { background: var(--gray); padding: 110px 60px; }
+  .seg-inner { max-width: 1200px; margin: 0 auto; }
+  .seg-header { text-align: center; margin-bottom: 56px; }
+  .seg-label { font-size: 0.7rem; letter-spacing: 0.26em; text-transform: uppercase; color: var(--gold); margin-bottom: 14px; font-weight: 600; }
+  .seg-title { font-size: clamp(1.8rem, 3vw, 2.8rem); font-weight: 800; color: var(--navy); line-height: 1.1; }
+  .seg-lead { font-size: 1rem; color: var(--mid); line-height: 1.7; max-width: 560px; margin: 20px auto 0; }
+  .seg-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 2px; }
+  .seg-card { display: block; background: var(--white); padding: 40px 34px; text-decoration: none; position: relative; transition: transform 0.2s, box-shadow 0.2s; }
+  .seg-card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px; background: var(--gold); transform: scaleX(0); transform-origin: left; transition: transform 0.25s; }
+  .seg-card:hover::before { transform: scaleX(1); }
+  .seg-card:hover { transform: translateY(-4px); box-shadow: 0 12px 40px rgba(0,33,71,0.1); }
+  .seg-nome { font-size: 1.1rem; font-weight: 700; color: var(--navy); margin-bottom: 12px; line-height: 1.2; }
+  .seg-desc { font-size: 0.86rem; color: var(--mid); line-height: 1.65; margin-bottom: 22px; }
+  .seg-cta { font-size: 0.72rem; letter-spacing: 0.14em; text-transform: uppercase; font-weight: 600; color: var(--gold); display: flex; align-items: center; gap: 8px; }
+  .seg-cta::after { content: '\2192'; transition: transform 0.2s; }
+  .seg-card:hover .seg-cta::after { transform: translateX(4px); }
+  .seg-mais { text-align: center; font-size: 0.9rem; color: var(--mid); line-height: 1.7; max-width: 680px; margin: 44px auto 0; }
+  @media (max-width: 1024px) { .seg-grid { grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 640px) { #segmentos { padding: 80px 24px; } .seg-grid { grid-template-columns: 1fr; } }
+</style>
 </head>
 <body>
 
@@ -1107,6 +1128,40 @@
         <p class="sd-desc">Fluxo de caixa, indicadores e visão estratégica das finanças. Para que você saiba onde está, para onde vai e o que precisa acontecer para chegar lá.</p>
       </div>
     </div>
+  </div>
+</section>
+
+<!-- SEGMENTOS -->
+<section id="segmentos">
+  <div class="seg-inner">
+    <div class="seg-header fade-up">
+      <p class="seg-label">Quem atendemos</p>
+      <h2 class="seg-title">Contabilidade que fala<br>a língua do seu setor</h2>
+      <p class="seg-lead">Cada setor tem tributo, obrigação e armadilha próprios. Estes são alguns dos segmentos que a VIPS atende em São Paulo.</p>
+    </div>
+    <div class="seg-grid fade-up">
+      <a href="/contabilidade-para-medicos" class="seg-card">
+        <h3 class="seg-nome">Saúde</h3>
+        <p class="seg-desc">Médicos, dentistas e clínicas. Fator R, equiparação hospitalar, SUP, CNES e DMED no desenho certo, do primeiro CNPJ em diante.</p>
+        <span class="seg-cta">Contabilidade para médicos</span>
+      </a>
+      <a href="/contabilidade-para-agencias" class="seg-card">
+        <h3 class="seg-nome">Agências e publicidade</h3>
+        <p class="seg-desc">Fee, comissão e repasse de mídia separados para tributar só o que é da agência, com o IRRF próprio do setor no lugar.</p>
+        <span class="seg-cta">Contabilidade para agências</span>
+      </a>
+      <a href="/contabilidade-para-tecnologia" class="seg-card">
+        <h3 class="seg-nome">Tecnologia e software</h3>
+        <p class="seg-desc">Fator R acompanhado mês a mês, ISS sobre SaaS e exportação de serviços no enquadramento certo, do Simples ao Real.</p>
+        <span class="seg-cta">Contabilidade para tecnologia</span>
+      </a>
+      <a href="/contabilidade-para-transportadoras" class="seg-card">
+        <h3 class="seg-nome">Transporte e logística</h3>
+        <p class="seg-desc">ICMS sobre o frete, crédito presumido, CT-e e folha de motorista pela lei própria do setor, com a frota rodando.</p>
+        <span class="seg-cta">Contabilidade para transportadoras</span>
+      </a>
+    </div>
+    <p class="seg-mais">A VIPS também atende comércio, restaurantes, indústria, construção, serviços profissionais, educação, terceiro setor e holdings patrimoniais.</p>
   </div>
 </section>
 
