@@ -866,6 +866,30 @@
   /* CREDENCIAIS com 6 selos */
   .cred-selos { display: grid; grid-template-columns: repeat(2, 1fr); }
   @media (max-width: 640px) { .cred-selos { grid-template-columns: repeat(2, 1fr); width: 100%; } }
+
+  /* INSTAGRAM (Conteudos) */
+  #conteudos { background: var(--white); padding: 100px 60px; border-top: 1px solid var(--line); display: none; }
+  #conteudos.ig-ok { display: block; }
+  .ig-inner { max-width: 960px; margin: 0 auto; }
+  .ig-head { display: flex; justify-content: space-between; align-items: flex-end; gap: 24px; margin-bottom: 44px; flex-wrap: wrap; }
+  .ig-label { font-size: 0.7rem; letter-spacing: 0.26em; text-transform: uppercase; color: var(--gold); margin-bottom: 14px; font-weight: 600; }
+  .ig-title { font-size: clamp(1.8rem, 3vw, 2.6rem); font-weight: 800; color: var(--navy); line-height: 1.1; }
+  .ig-title span { color: var(--gold); }
+  .ig-follow { display: inline-block; border: 1px solid var(--navy); color: var(--navy); padding: 12px 22px; border-radius: 6px;
+               font-size: 0.78rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; text-decoration: none; transition: background .2s, color .2s; }
+  .ig-follow:hover { background: var(--navy); color: var(--white); }
+  .ig-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+  .ig-post { position: relative; display: block; aspect-ratio: 4 / 5; overflow: hidden; border-radius: 6px; background: var(--gray); }
+  .ig-post img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform .4s; }
+  .ig-post:hover img { transform: scale(1.04); }
+  .ig-cap { position: absolute; inset: 0; background: rgba(0,33,71,0.88); color: var(--white); padding: 22px;
+            font-size: 0.85rem; line-height: 1.55; display: flex; align-items: flex-end; opacity: 0; transition: opacity .25s; }
+  .ig-cap p { display: -webkit-box; -webkit-line-clamp: 6; -webkit-box-orient: vertical; overflow: hidden; }
+  .ig-post:hover .ig-cap, .ig-post:focus-visible .ig-cap { opacity: 1; }
+  .ig-reel { position: absolute; top: 12px; right: 12px; background: rgba(0,33,71,0.75); color: var(--white);
+             font-size: 0.62rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; padding: 5px 9px; border-radius: 4px; }
+  @media (max-width: 860px) { #conteudos { padding: 72px 24px; } .ig-grid { grid-template-columns: repeat(2, 1fr); gap: 10px; } }
+  @media (prefers-reduced-motion: reduce) { .ig-post img, .ig-cap { transition: none; } }
 </style>
 </head>
 <body>
@@ -1303,6 +1327,69 @@
   </div>
 </section>
 
+
+<!-- CONTEUDOS (Instagram via Behold) -->
+<section id="conteudos" aria-label="Conteúdos da VIPS no Instagram">
+  <div class="ig-inner">
+    <div class="ig-head">
+      <div>
+        <p class="ig-label">Conteúdos</p>
+        <h2 class="ig-title">Acompanhe a VIPS<br><span>no Instagram</span></h2>
+      </div>
+      <a class="ig-follow" id="ig-follow" href="#" target="_blank" rel="noopener">Seguir no Instagram</a>
+    </div>
+    <div class="ig-grid" id="ig-grid"></div>
+  </div>
+</section>
+<script>
+(function () {
+  var FEED = '__BEHOLD_FEED_URL__';
+  var sec = document.getElementById('conteudos'), grid = document.getElementById('ig-grid'), done = false;
+  if (!sec || FEED.indexOf('https://feeds.behold.so/') !== 0) return;
+  function img(p) {
+    var s = p.sizes && (p.sizes.medium || p.sizes.large || p.sizes.small);
+    if (s && s.mediaUrl) return s.mediaUrl;
+    return p.mediaType === 'VIDEO' ? p.thumbnailUrl : p.mediaUrl;
+  }
+  function render(d) {
+    var posts = (Array.isArray(d) ? d : (d && d.posts) || []).slice(0, 6);
+    if (!posts.length) return;
+    posts.forEach(function (p) {
+      var src = img(p);
+      if (!src || !p.permalink || p.permalink.indexOf('https://www.instagram.com/') !== 0) return;
+      var a = document.createElement('a');
+      a.className = 'ig-post'; a.href = p.permalink; a.target = '_blank'; a.rel = 'noopener';
+      var text = (p.prunedCaption || p.caption || '').trim();
+      a.setAttribute('aria-label', text ? 'Post da VIPS: ' + text.slice(0, 90) : 'Post da VIPS no Instagram');
+      var i = document.createElement('img');
+      i.src = src; i.loading = 'lazy'; i.decoding = 'async'; i.alt = p.altText || '';
+      a.appendChild(i);
+      if (p.mediaType === 'VIDEO') { var r = document.createElement('span'); r.className = 'ig-reel'; r.textContent = 'Reel'; a.appendChild(r); }
+      if (text) { var c = document.createElement('div'); c.className = 'ig-cap'; var t = document.createElement('p'); t.textContent = text; c.appendChild(t); a.appendChild(c); }
+      a.addEventListener('click', function () { if (typeof window.gtag === 'function') window.gtag('event', 'instagram_click', { link_url: p.permalink }); });
+      grid.appendChild(a);
+    });
+    if (!grid.children.length) return;
+    var user = !Array.isArray(d) && d && d.username;
+    var f = document.getElementById('ig-follow');
+    if (user && /^[A-Za-z0-9._]{1,30}$/.test(user)) { f.href = 'https://www.instagram.com/' + user + '/'; f.textContent = 'Seguir @' + user; }
+    else { f.href = posts[0].permalink.split('/p/')[0].split('/reel/')[0] || 'https://www.instagram.com/'; }
+    sec.className = 'ig-ok';
+  }
+  function load() {
+    if (done) return; done = true;
+    fetch(FEED).then(function (r) { if (!r.ok) throw 0; return r.json(); }).then(render).catch(function () {});
+  }
+  function init() {
+    var anchor = document.getElementById('credenciais');
+    if (anchor && 'IntersectionObserver' in window) {
+      var io = new IntersectionObserver(function (es) { if (es.some(function (e) { return e.isIntersecting; })) { io.disconnect(); load(); } }, { rootMargin: '900px 0px' });
+      io.observe(anchor);
+    } else { load(); }
+  }
+  if (document.readyState === 'loading') { document.addEventListener('DOMContentLoaded', init); } else { init(); }
+})();
+</script>
 
 <!-- CREDENCIAIS -->
 <section id="credenciais">
