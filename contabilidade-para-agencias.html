@@ -495,5 +495,16 @@
   }
 </script>
 
+
+<!-- Eventos do GA4: cliques no WhatsApp -->
+<script>
+document.addEventListener('click', function (e) {
+  var a = e.target.closest && e.target.closest('a[href*="wa.me"], a[href*="api.whatsapp.com"]');
+  if (a && typeof window.gtag === 'function') {
+    window.gtag('event', 'whatsapp_click', { link_url: a.href, page_path: location.pathname });
+  }
+});
+</script>
+
 </body>
 </html>
