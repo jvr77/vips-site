@@ -4,7 +4,7 @@ name: IndexNow
 on:
   push:
     branches: [main]
-    paths: ['**.html', 'sitemap.xml']
+    paths: ['**.html', 'sitemap.xml', '.github/workflows/indexnow.yml']
 
 jobs:
   ping:
@@ -29,11 +29,14 @@ jobs:
             if [ "$slug" = "index" ]; then u="https://$HOST/"; else u="https://$HOST/$slug"; fi
             URLS="$URLS\"$u\","
           done
-          if git diff --name-only HEAD~1 HEAD | grep -q '^sitemap.xml$'; then
+          if git diff --name-only HEAD~1 HEAD | grep -qE '^(sitemap.xml|.github/workflows/indexnow.yml)$'; then
             for u in $(grep -o '<loc>[^<]*</loc>' sitemap.xml | sed 's/<[^>]*>//g'); do URLS="$URLS\"$u\","; done
           fi
           URLS="${URLS%,}"
           if [ -z "$URLS" ]; then echo "Nada para enviar"; exit 0; fi
           BODY="{\"host\":\"$HOST\",\"key\":\"$KEY\",\"keyLocation\":\"https://$HOST/$KEY.txt\",\"urlList\":[$URLS]}"
           echo "$BODY"
-          curl -sS -o /dev/null -w "IndexNow HTTP %{http_code}\n" -X POST "https://api.indexnow.org/indexnow" -H "Content-Type: application/json; charset=utf-8" -d "$BODY"
+          CODE=$(curl -sS -o /dev/null -w "%{http_code}" -X POST "https://api.indexnow.org/indexnow" -H "Content-Type: application/json; charset=utf-8" -d "$BODY")
+          echo "IndexNow HTTP $CODE"
+          # 200 e 202 = aceito; qualquer outro codigo marca a execucao como falha no GitHub
+          [ "$CODE" = "200" ] || [ "$CODE" = "202" ]
