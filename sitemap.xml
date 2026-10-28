@@ -90,4 +90,19 @@
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
+  <url>
+    <loc>https://vipsconsultores.com.br/conteudos/</loc>
+    <lastmod>2026-10-28</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://vipsconsultores.com.br/conteudos/itcmd-lc-227-doacao-quotas-imoveis</loc>
+    <lastmod>2026-10-28</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://vipsconsultores.com.br/conteudos/simples-nacional-reforma-tributaria-quem-vende-para-empresas</loc>
+    <lastmod>2026-10-28</lastmod>
+    <priority>0.7</priority>
+  </url>
 </urlset>

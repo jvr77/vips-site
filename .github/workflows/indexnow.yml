@@ -26,7 +26,11 @@ jobs:
           for f in $FILES; do
             [ -f "$f" ] || continue
             slug="${f%.html}"
-            if [ "$slug" = "index" ]; then u="https://$HOST/"; else u="https://$HOST/$slug"; fi
+            case "$slug" in
+              index) u="https://$HOST/" ;;
+              */index) u="https://$HOST/${slug%index}" ;;
+              *) u="https://$HOST/$slug" ;;
+            esac
             URLS="$URLS\"$u\","
           done
           if git diff --name-only HEAD~1 HEAD | grep -qE '^(sitemap.xml|.github/workflows/indexnow.yml)$'; then
