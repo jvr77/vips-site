@@ -10,6 +10,11 @@
 /contato          /#contato   301!
 /contato/*        /#contato   301!
 
+# URLs da home antiga (404 no Search Console)
+/home             /           301!
+/home/*           /           301!
+/index.php        /           301!
+
 # Completar com a lista de 404 do Google Search Console
 # (Indexacao > Paginas > "Nao encontrada (404)")
 
