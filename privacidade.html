@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Política de Privacidade | VIPS Contabilidade</title>
+  <meta name="description" content="Como a VIPS Contabilidade trata os dados pessoais coletados pelo site vipsconsultores.com.br, com base na LGPD." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://vipsconsultores.com.br/privacidade" />
+  <link rel="icon" type="image/png" href="https://vipsconsultores.com.br/favicon.png" />
+  <link rel="apple-touch-icon" href="https://vipsconsultores.com.br/favicon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --navy:   #002147;
+      --gold:   #AA9860;
+      --gray:   #F0F0F0;
+      --mid:    #4A6080;
+      --line:   rgba(0,33,71,0.12);
+      --white:  #ffffff;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      color: var(--navy);
+      background: var(--white);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a { text-decoration: none; color: inherit; }
+    ul { list-style: none; }
+
+    /* ─── NAV ─── */
+    nav {
+      position: sticky; top: 0; z-index: 100;
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 18px 60px;
+      background: rgba(255,255,255,0.92);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--line);
+    }
+    .nav-logo { display: flex; align-items: center; }
+    nav ul { display: flex; gap: 36px; align-items: center; }
+    nav ul a {
+      font-size: 0.9rem; font-weight: 500; color: var(--navy);
+      transition: color 0.2s;
+    }
+    nav ul a:hover { color: var(--gold); }
+    .nav-cta {
+      background: var(--navy); color: var(--white) !important;
+      padding: 10px 22px; border-radius: 6px; font-weight: 600 !important;
+      transition: opacity 0.2s;
+    }
+    .nav-cta:hover { opacity: 0.88; }
+    .nav-hamburger {
+      display: none; background: none; border: none; cursor: pointer;
+      flex-direction: column; gap: 5px; padding: 6px;
+    }
+    .nav-hamburger span {
+      width: 24px; height: 2px; background: var(--navy); transition: 0.3s;
+    }
+
+    /* ─── BREADCRUMB ─── */
+    .breadcrumb {
+      max-width: 1100px; margin: 0 auto; padding: 24px 60px 0;
+      font-size: 0.78rem; color: var(--mid); letter-spacing: 0.02em;
+    }
+    .breadcrumb a:hover { color: var(--gold); }
+    .breadcrumb span { color: var(--navy); font-weight: 600; }
+
+    /* ─── HERO ─── */
+    .hero {
+      max-width: 1100px; margin: 0 auto; padding: 60px 60px 80px;
+    }
+    .hero-label {
+      font-size: 0.7rem; letter-spacing: 0.26em; text-transform: uppercase;
+      color: var(--gold); margin-bottom: 20px; font-weight: 600;
+    }
+    .hero-title {
+      font-size: clamp(2.2rem, 5vw, 3.6rem); font-weight: 800;
+      line-height: 1.08; color: var(--navy); max-width: 780px;
+      margin-bottom: 28px;
+    }
+    .hero-title span { color: var(--gold); }
+    .hero-sub {
+      font-size: clamp(1rem, 1.6vw, 1.18rem); color: var(--mid);
+      max-width: 620px; line-height: 1.65; margin-bottom: 40px;
+    }
+    .hero-cta {
+      display: inline-block; background: var(--navy); color: var(--white);
+      padding: 16px 34px; border-radius: 6px; font-weight: 600;
+      font-size: 0.98rem; transition: opacity 0.2s;
+    }
+    .hero-cta:hover { opacity: 0.88; }
+
+    /* ─── SEÇÃO PADRÃO ─── */
+    .sec { padding: 90px 60px; }
+    .sec-navy { background: var(--navy); }
+    .sec-white { background: var(--white); border-top: 1px solid var(--line); }
+    .sec-gray { background: var(--gray); }
+    .sec-inner { max-width: 1100px; margin: 0 auto; }
+    .sec-label {
+      font-size: 0.7rem; letter-spacing: 0.26em; text-transform: uppercase;
+      color: var(--gold); margin-bottom: 14px; font-weight: 600;
+    }
+    .sec-title {
+      font-size: clamp(1.8rem, 3vw, 2.6rem); font-weight: 800;
+      line-height: 1.12; margin-bottom: 20px;
+    }
+    .sec-title span { color: var(--gold); }
+    .sec-navy .sec-title { color: var(--white); }
+    .sec-white .sec-title, .sec-gray .sec-title { color: var(--navy); }
+    .sec-lead {
+      font-size: 1rem; max-width: 640px; line-height: 1.75; margin-bottom: 48px;
+    }
+    .sec-navy .sec-lead { color: rgba(255,255,255,0.6); }
+    .sec-white .sec-lead, .sec-gray .sec-lead { color: var(--mid); }
+
+    /* ─── SINAIS (grid de cards) ─── */
+    .sinais-grid {
+      display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px;
+      background: var(--line);
+    }
+    .sinal {
+      background: var(--gray); padding: 40px 34px;
+    }
+    .sinal-num {
+      font-size: 0.65rem; letter-spacing: 0.2em; color: var(--gold);
+      font-weight: 700; margin-bottom: 18px;
+    }
+    .sinal-t { font-size: 1.05rem; font-weight: 700; color: var(--navy); margin-bottom: 12px; }
+    .sinal-d { font-size: 0.88rem; color: var(--mid); line-height: 1.7; }
+
+    /* ─── COMO FUNCIONA (passos) ─── */
+    .passos { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0; position: relative; }
+    .passos::before {
+      content: ''; position: absolute; top: 36px; left: 12%; width: 76%; height: 1px;
+      background: rgba(255,255,255,0.15); z-index: 0;
+    }
+    .passo { padding: 0 28px; text-align: center; position: relative; z-index: 1; }
+    .passo-num {
+      width: 72px; height: 72px; border-radius: 50%;
+      background: var(--navy); border: 2px solid rgba(255,255,255,0.2);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.3rem; font-weight: 800; color: var(--white);
+      margin: 0 auto 26px;
+    }
+    .passo-t { font-size: 1.02rem; font-weight: 700; color: var(--white); margin-bottom: 12px; }
+    .passo-d { font-size: 0.85rem; color: rgba(255,255,255,0.55); line-height: 1.7; }
+
+    /* ─── MITOS (lista) ─── */
+    .mitos { display: grid; gap: 1px; background: var(--line); }
+    .mito { background: var(--white); padding: 32px 36px; }
+    .mito-q {
+      font-size: 1.02rem; font-weight: 700; color: var(--navy);
+      margin-bottom: 10px; display: flex; align-items: baseline; gap: 12px;
+    }
+    .mito-q::before { content: '—'; color: var(--gold); font-weight: 800; }
+    .mito-a { font-size: 0.92rem; color: var(--mid); line-height: 1.7; padding-left: 26px; }
+
+    /* ─── CTA FINAL ─── */
+    .cta-final {
+      background: var(--navy); padding: 96px 60px; text-align: center;
+    }
+    .cta-final-inner { max-width: 680px; margin: 0 auto; }
+    .cta-final h2 {
+      font-size: clamp(1.8rem, 3.4vw, 2.8rem); font-weight: 800;
+      color: var(--white); line-height: 1.12; margin-bottom: 20px;
+    }
+    .cta-final h2 span { color: var(--gold); }
+    .cta-final p {
+      font-size: 1rem; color: rgba(255,255,255,0.6); line-height: 1.7;
+      margin-bottom: 36px;
+    }
+    .cta-final a {
+      display: inline-block; background: var(--gold); color: var(--navy);
+      padding: 16px 40px; border-radius: 6px; font-weight: 700;
+      font-size: 1rem; transition: opacity 0.2s;
+    }
+    .cta-final a:hover { opacity: 0.9; }
+
+    /* ─── FOOTER ─── */
+    footer {
+      background: var(--navy); padding: 40px 60px;
+      display: flex; align-items: center; justify-content: space-between;
+      gap: 24px; border-top: 1px solid rgba(255,255,255,0.08);
+    }
+    .footer-logo { font-size: 1.05rem; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; color: var(--white); }
+    .footer-links { display: flex; gap: 30px; }
+    .footer-links a { font-size: 0.85rem; color: rgba(255,255,255,0.6); transition: color 0.2s; }
+    .footer-links a:hover { color: var(--gold); }
+    .footer-copy { font-size: 0.7rem; color: rgba(255,255,255,0.38); letter-spacing: 0.06em; }
+
+    /* ─── RESPONSIVO ─── */
+    @media (max-width: 860px) {
+      nav { padding: 16px 24px; }
+      nav ul {
+        display: none; position: absolute; top: 100%; left: 0; right: 0;
+        flex-direction: column; gap: 0; background: var(--white);
+        border-bottom: 1px solid var(--line); padding: 12px 24px;
+      }
+      nav ul.open { display: flex; }
+      nav ul li { width: 100%; padding: 12px 0; border-top: 1px solid var(--line); }
+      nav ul li:first-child { border-top: none; }
+      .nav-hamburger { display: flex; }
+      .breadcrumb, .hero { padding-left: 24px; padding-right: 24px; }
+      .sec, .cta-final { padding-left: 24px; padding-right: 24px; }
+      .sinais-grid { grid-template-columns: 1fr; }
+      .passos { grid-template-columns: 1fr; gap: 40px; }
+      .passos::before { display: none; }
+      footer { flex-direction: column; text-align: center; gap: 18px; }
+      .footer-links { flex-direction: column; gap: 12px; align-items: center; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      * { transition: none !important; }
+    }
+  
+    .grid-2 { grid-template-columns: repeat(2, 1fr); }
+    .passos-3 { grid-template-columns: repeat(3, 1fr); }
+    .passos-3::before { left: 16%; width: 68%; }
+    @media (max-width: 860px) { .grid-2 { grid-template-columns: 1fr; } }
+    .sec-navy a.link-inline { color: var(--gold); text-decoration: underline; text-underline-offset: 3px; }
+
+    .prose { max-width: 760px; }
+    .prose h2 { font-size: 1.25rem; font-weight: 700; color: var(--navy); margin: 44px 0 14px; }
+    .prose h2:first-child { margin-top: 0; }
+    .prose p, .prose li { font-size: 0.97rem; color: var(--mid); line-height: 1.75; }
+    .prose p { margin-bottom: 14px; }
+    .prose ul { margin: 0 0 16px 20px; list-style: disc; }
+    .prose li { margin-bottom: 6px; }
+    .prose a { color: var(--navy); text-decoration: underline; text-underline-offset: 3px; }
+    .prose strong { color: var(--navy); font-weight: 600; }
+    .tbl { width: 100%; border-collapse: collapse; margin: 8px 0 20px; font-size: 0.9rem; }
+    .tbl th, .tbl td { text-align: left; padding: 12px 14px; border-bottom: 1px solid var(--line); vertical-align: top; color: var(--mid); line-height: 1.6; }
+    .tbl th { color: var(--navy); font-weight: 600; background: var(--gray); }
+    @media (max-width: 640px) { .tbl { font-size: 0.82rem; } .tbl th, .tbl td { padding: 10px 8px; } }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="/" class="nav-logo" aria-label="VIPS Contabilidade">
+    <img src="https://vipsconsultores.com.br/favicon.png" alt="VIPS Contabilidade" style="height:36px; width:auto;">
+  </a>
+  <ul id="navmenu">
+    <li><a href="/#intro">Sobre</a></li>
+    <li><a href="/#servicos">Serviços</a></li>
+    <li><a href="/#segmentos">Segmentos</a></li>
+    <li><a href="/#contato">Contato</a></li>
+    <li><a href="https://onvio.com.br/clientcenter/company/B908D21A1B4D493383CE7F152F48CC7E" class="nav-cta">Portal do Cliente</a></li>
+  </ul>
+  <button class="nav-hamburger" id="hamburger" onclick="toggleMenu()" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+
+<div class="breadcrumb">
+  <a href="/">Início</a> &nbsp;/&nbsp; <span>Política de privacidade</span>
+</div>
+
+<header class="hero">
+  <p class="hero-label">LGPD</p>
+  <h1 class="hero-title">Política de <span>privacidade</span></h1>
+  <p class="hero-sub">Esta política explica quais dados pessoais o site vipsconsultores.com.br coleta, para que eles são usados e como você exerce seus direitos, conforme a Lei 13.709/2018 (LGPD).</p>
+  <p class="hero-sub" style="font-size:0.85rem; margin-bottom:0;">Última atualização: 28 de outubro de 2026.</p>
+</header>
+
+<section class="sec sec-white">
+  <div class="sec-inner prose">
+
+    <h2>1. Quem é o controlador</h2>
+    <p>O controlador dos dados tratados neste site é a <strong>VIP'S Organização Contábil Sociedade Simples</strong>, CNPJ 08.261.303/0001-70, com sede na Rua Cantagalo, 74, conjuntos 501 a 505, Tatuapé, São Paulo/SP, CEP 03319-000.</p>
+    <p>Canal para assuntos de privacidade e proteção de dados: <a href="mailto:contato@vipsconsultores.com.br">contato@vipsconsultores.com.br</a>.</p>
+
+    <h2>2. Quais dados coletamos e para quê</h2>
+    <table class="tbl">
+      <thead><tr><th>Dado</th><th>Finalidade</th><th>Base legal (LGPD)</th></tr></thead>
+      <tbody>
+        <tr><td>Nome, WhatsApp, e-mail, faturamento aproximado e segmento, informados no formulário do site</td><td>Retornar o seu contato e preparar a conversa inicial sobre a sua empresa</td><td>Procedimentos preliminares a um contrato, a pedido do titular (art. 7º, V)</td></tr>
+        <tr><td>Dados de navegação: páginas visitadas, tempo na página, tipo de dispositivo e navegador, cidade aproximada e origem do acesso</td><td>Medir a audiência do site e melhorar o conteúdo</td><td>Legítimo interesse (art. 7º, IX)</td></tr>
+      </tbody>
+    </table>
+    <p>O site não pede dados sensíveis, como saúde, religião ou biometria, e não é direcionado a menores de 18 anos. Os dados de navegação são tratados de forma agregada; não os usamos para identificar você individualmente.</p>
+
+    <h2>3. Com quem os dados são compartilhados</h2>
+    <p>Para funcionar, o site usa fornecedores que tratam dados em nosso nome:</p>
+    <ul>
+      <li><strong>Netlify</strong> (Estados Unidos): hospedagem do site e recebimento das mensagens enviadas pelo formulário.</li>
+      <li><strong>Google Analytics</strong> (Estados Unidos): medição de audiência, com uso de cookies de análise.</li>
+      <li><strong>YouTube</strong> (Estados Unidos): exibição do vídeo da página inicial, no modo de privacidade aprimorada, que não grava cookies de rastreamento só por você abrir a página.</li>
+    </ul>
+    <p>Ao clicar em um botão de WhatsApp ou no Portal do Cliente, você sai do nosso site. A conversa no WhatsApp segue a política da Meta, e o Portal do Cliente é operado pela Thomson Reuters, com política própria.</p>
+    <p>Como esses fornecedores estão fora do Brasil, há transferência internacional de dados, realizada com empresas que adotam padrões reconhecidos de proteção (art. 33 da LGPD). Não vendemos dados pessoais.</p>
+
+    <h2>4. Por quanto tempo guardamos</h2>
+    <p>Os dados do formulário são mantidos pelo tempo necessário para atender a sua solicitação. Se você se tornar cliente, passam a seguir o prazo do contrato e das obrigações legais aplicáveis. Os dados de navegação ficam disponíveis no Google Analytics por até 14 meses.</p>
+
+    <h2>5. Seus direitos</h2>
+    <p>A LGPD (art. 18) garante a você, a qualquer momento:</p>
+    <ul>
+      <li>confirmar se tratamos seus dados e acessá-los;</li>
+      <li>corrigir dados incompletos ou desatualizados;</li>
+      <li>pedir a anonimização, o bloqueio ou a eliminação de dados desnecessários;</li>
+      <li>pedir a portabilidade dos dados;</li>
+      <li>saber com quem os dados foram compartilhados;</li>
+      <li>se opor a um tratamento feito com base no legítimo interesse.</li>
+    </ul>
+    <p>Para exercer qualquer um deles, escreva para <a href="mailto:contato@vipsconsultores.com.br">contato@vipsconsultores.com.br</a>. Você também pode recorrer à Autoridade Nacional de Proteção de Dados (ANPD).</p>
+
+    <h2>6. Cookies</h2>
+    <p>O site usa cookies do Google Analytics para medir a audiência. Você pode bloqueá-los ou apagá-los nas configurações do seu navegador, sem prejuízo para a navegação.</p>
+
+    <h2>7. Segurança</h2>
+    <p>O site funciona apenas com conexão criptografada (HTTPS) e adota cabeçalhos de segurança que impedem o carregamento de conteúdo de origens não autorizadas. O acesso às mensagens do formulário é restrito à equipe da VIPS.</p>
+
+    <h2>8. Alterações</h2>
+    <p>Esta política pode ser atualizada. A data da última versão fica sempre no topo desta página.</p>
+
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-logo">VIPS<span style="color:var(--gold)">.</span> Contabilidade</div>
+  <div class="footer-links">
+    <a href="/#intro">Sobre</a>
+    <a href="/#servicos">Serviços</a>
+    <a href="/#contato">Contato</a>
+    <a href="/privacidade">Privacidade</a>
+  </div>
+  <div class="footer-copy">© 1995 — 2026 VIPS Consultores. Todos os direitos reservados.</div>
+</footer>
+
+<script>
+  function toggleMenu() {
+    document.getElementById('navmenu').classList.toggle('open');
+  }
+</script>
+
+
+<!-- Eventos do GA4: cliques no WhatsApp -->
+<script>
+document.addEventListener('click', function (e) {
+  var a = e.target.closest && e.target.closest('a[href*="wa.me"], a[href*="api.whatsapp.com"]');
+  if (a && typeof window.gtag === 'function') {
+    window.gtag('event', 'whatsapp_click', { link_url: a.href, page_path: location.pathname });
+  }
+});
+</script>
+
+
+</body>
+</html>
