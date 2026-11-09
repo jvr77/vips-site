@@ -15,6 +15,10 @@
 /home/*           /           301!
 /index.php        /           301!
 
+# Boletins do site antigo: removidos de vez (410), para o Google parar de visitar
+/boletim          /404.html   410!
+/boletim/*        /404.html   410!
+
 # Completar com a lista de 404 do Google Search Console
 # (Indexacao > Paginas > "Nao encontrada (404)")
 

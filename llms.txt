@@ -1,0 +1,46 @@
+# VIPS Contabilidade
+
+> Escritório de contabilidade em São Paulo desde 1995. Atende pequenas e médias empresas da capital e do estado de São Paulo em contabilidade, fiscal, departamento pessoal, societário e planejamento tributário, que vem incluso para todos os clientes. Atendimento presencial no escritório ou online.
+
+Razão social: VIP'S Organização Contábil Sociedade Simples. CNPJ 08.261.303/0001-70. Endereço: Rua Cantagalo, 74, conjuntos 501 a 505, São Paulo/SP, CEP 03319-000. Contato: WhatsApp (11) 95608-1408, contato@vipsconsultores.com.br.
+
+## Páginas principais
+
+- [Início](https://vipsconsultores.com.br/): quem é a VIPS, serviços, como funciona o atendimento e perguntas frequentes
+- [Trocar de contador](https://vipsconsultores.com.br/trocar-de-contador): como a VIPS conduz a troca de escritório contábil sem parar a operação da empresa
+- [Conteúdos](https://vipsconsultores.com.br/conteudos/): artigos sobre reforma tributária, tributação por setor e sucessão empresarial
+
+## Setores atendidos
+
+- [Contabilidade para Agências de Marketing em São Paulo](https://vipsconsultores.com.br/contabilidade-para-agencias): Contabilidade para agências de marketing e publicidade em São Paulo. Repasse de mídia, ISS sobre comissão, IRRF da agência e Simples por quem atende o setor.
+- [Contabilidade para Comércio e Lojas em São Paulo](https://vipsconsultores.com.br/contabilidade-para-comercio): Contabilidade para comércio varejista e atacadista em São Paulo. ICMS-ST, PIS/COFINS monofásico, estoque e regime certo, por quem atende lojistas desde 1995.
+- [Contabilidade para Construtoras em São Paulo](https://vipsconsultores.com.br/contabilidade-para-construtoras): Contabilidade para construtoras, incorporadoras e empreiteiras em São Paulo. CNO, retenção de 11%, RET e empreitada no regime certo, desde 1995.
+- [Contabilidade para Escolas e Cursos em São Paulo](https://vipsconsultores.com.br/contabilidade-para-escolas): Contabilidade para escolas e cursos em São Paulo. Mensalidades, inadimplência, regime de caixa, folha de professores e ISS, por quem atende educação desde 1995.
+- [Holding Patrimonial e Familiar em São Paulo](https://vipsconsultores.com.br/contabilidade-para-holdings): Holding patrimonial e familiar em São Paulo. Imóveis integralizados, aluguéis tributados na PJ, sucessão e lucros, com a VIPS desde 1995.
+- [Contabilidade para Indústrias em São Paulo](https://vipsconsultores.com.br/contabilidade-para-industria): Contabilidade para indústrias em São Paulo. IPI, créditos de insumos, custo de produção, Bloco K e regime certo, por quem atende o setor desde 1995.
+- [Contabilidade para Médicos e Clínicas em São Paulo](https://vipsconsultores.com.br/contabilidade-para-medicos): Contabilidade para médicos, dentistas e clínicas em São Paulo. PJ, fator R, equiparação hospitalar, SUP e CNES tratados por quem atende saúde desde 1995.
+- [Contabilidade para Restaurantes e Bares em São Paulo](https://vipsconsultores.com.br/contabilidade-para-restaurantes): Contabilidade para restaurantes, bares e padarias em São Paulo. Bebidas monofásicas, Lei da Gorjeta, folha de turnos e delivery, com o setor desde 1995.
+- [Contabilidade para Advogados, Engenheiros e Consultores](https://vipsconsultores.com.br/contabilidade-para-servicos-profissionais): Contabilidade para advogados, engenheiros, arquitetos e consultores em São Paulo. ISS fixo, retenções na fonte, Simples e distribuição de lucros desde 1995.
+- [Contabilidade para Empresas de Tecnologia em SP](https://vipsconsultores.com.br/contabilidade-para-tecnologia): Contabilidade para empresas de tecnologia, software e TI em São Paulo. Fator R, ISS sobre SaaS, exportação de software e escolha de regime por quem atende o setor.
+- [Contabilidade para ONGs, Associações e Igrejas](https://vipsconsultores.com.br/contabilidade-para-terceiro-setor): Contabilidade para ONGs, associações, igrejas e entidades sem fins lucrativos em São Paulo. Imunidade, isenção, ITG 2002 e CEBAS, desde 1995.
+- [Contabilidade para Transportadoras em São Paulo](https://vipsconsultores.com.br/contabilidade-para-transportadoras): Contabilidade para transportadoras e logística em São Paulo. ICMS sobre frete, crédito presumido, CT-e, presunção de 8% e folha de motorista por quem atende o setor.
+
+## Artigos
+
+- [Restaurantes na reforma: redução de 40% no IBS e CBS](https://vipsconsultores.com.br/conteudos/bares-e-restaurantes-reforma-tributaria-regime-especifico): Bares e restaurantes pagam IBS e CBS com redução de 40%, mas bebida alcoólica, revenda, gorjeta e delivery mudam a conta. Onde fica a fronteira.
+- [cBenef em SP: código de benefício fiscal na NF-e e NFC-e](https://vipsconsultores.com.br/conteudos/cbenef-sp-codigo-de-beneficio-fiscal-nfe-nfce): cBenef em SP: quando informar o código de benefício fiscal na NF-e e na NFC-e, a relação com CST, os casos que confundem e o risco de errar o código.
+- [CBS em 2027: o que muda no Simples, Presumido e Real](https://vipsconsultores.com.br/conteudos/cbs-2027-o-que-muda-por-regime-tributario): A CBS substitui PIS e Cofins em 2027. Como funciona o crédito, a alíquota de referência, o que muda no Simples, no Presumido e no Real e as reduções por setor.
+- [Redução de 30% da CBS e IBS: profissões regulamentadas](https://vipsconsultores.com.br/conteudos/cbs-ibs-profissoes-regulamentadas-reducao-30): Redução de 30% da CBS e do IBS para profissões regulamentadas (LC 214, art. 127): condições para a sociedade, ISS na transição e Simples x regime regular.
+- [CBS e IBS na saúde: redução de 60% para clínicas](https://vipsconsultores.com.br/conteudos/cbs-ibs-saude-reducao-60-clinicas-consultorios): Redução de 60% da CBS e do IBS na saúde: o que entra no Anexo III da LC 214, o que fica de fora e como a clínica no Simples, Presumido e Real é afetada.
+- [CBS no Lucro Presumido: crédito, preço e nota](https://vipsconsultores.com.br/conteudos/cbs-lucro-presumido-o-que-muda-credito): CBS no Lucro Presumido: o que gera crédito, o que fica de fora, por que serviço com folha alta sente mais que comércio e o que muda no preço e na nota.
+- [Doação de quotas com usufruto: ITCMD em SP e LC 227](https://vipsconsultores.com.br/conteudos/doacao-de-quotas-com-reserva-de-usufruto-itcmd): Doação de quotas com reserva de usufruto em SP: frações do ITCMD, extinção do usufruto, o que a LC 227/2026 muda e as perguntas que a doação abre na empresa.
+- [Fim da 6x1 em lojas e restaurantes: quem folga no domingo](https://vipsconsultores.com.br/conteudos/fim-da-escala-6x1-comercio-restaurantes-domingo-folgas): Com a Emenda 141, loja e restaurante que abrem todo dia passam a dar duas folgas por empregado. Como ficam domingo, feriado e o rodízio da equipe.
+- [Fim da escala 6x1: o que muda e quando começa](https://vipsconsultores.com.br/conteudos/fim-da-escala-6x1-emenda-141-jornada-folgas): Fim da escala 6x1: a partir de 16/12/2026, duas folgas por semana e jornada de até 42h; em dezembro de 2027, 40h. Como ficam o 5x2, o 6x1 e a convenção.
+- [ITCMD e a LC 227/2026: doação de quotas e imóveis em SP](https://vipsconsultores.com.br/conteudos/itcmd-lc-227-doacao-quotas-imoveis): LC 227/2026 e ITCMD: base a valor de mercado para quotas e imóveis, alíquota progressiva e soma de doações. O que muda para famílias empresárias em SP.
+- [Aluguel e holding na reforma tributária: IBS e CBS](https://vipsconsultores.com.br/conteudos/locacao-de-imoveis-holding-reforma-tributaria-ibs-cbs): IBS e CBS na locação e venda de imóveis: redução de 70% e de 50%, redutor social, quando a pessoa física paga e o que muda entre CPF e holding.
+- [Simples Nacional, IBS e CBS: quem vende para empresas](https://vipsconsultores.com.br/conteudos/simples-nacional-reforma-tributaria-quem-vende-para-empresas): No Simples, quem vende para empresas do regime regular gera menos crédito de IBS e CBS. O regime híbrido resolve a conta de umas e piora a de outras.
+- [Software e SaaS na reforma tributária: IBS e CBS](https://vipsconsultores.com.br/conteudos/software-saas-reforma-tributaria-ibs-cbs): Software e SaaS no IBS e na CBS: fim da disputa ISS x ICMS, alíquota cheia, filtros da redução de 60% em segurança cibernética, destino e exportação.
+
+## Optional
+
+- [Política de privacidade](https://vipsconsultores.com.br/privacidade)
