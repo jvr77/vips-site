@@ -12,7 +12,7 @@
 
 # Links curtos das redes (bio do Instagram), com marcação para o Analytics
 /ig   /?utm_source=instagram&utm_medium=social&utm_campaign=bio#contato   302!
-/fb   /?utm_source=facebook&utm_medium=social&utm_campaign=pagina   302!
+/fb   /?utm_source=facebook&utm_medium=social&utm_campaign=pagina#contato   302!
 
 # URLs da home antiga (404 no Search Console)
 /home             /           301!
