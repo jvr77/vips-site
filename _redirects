@@ -23,6 +23,24 @@
 /boletim          /404.html   410!
 /boletim/*        /404.html   410!
 
+# Outras seções do site antigo (lista de 404 do Search Console, 16/11/2026)
+/faleconosco                /#contato    301!
+/faleconosco/*              /#contato    301!
+/sobre-os-nossos-servicos   /#servicos   301!
+/sobre-os-nossos-servicos/* /#servicos   301!
+/agenda       /404.html   410!
+/agenda/*     /404.html   410!
+/consultas    /404.html   410!
+/consultas/*  /404.html   410!
+/certidoes    /404.html   410!
+/certidoes/*  /404.html   410!
+/indices      /404.html   410!
+/indices/*    /404.html   410!
+/tabelas      /404.html   410!
+/tabelas/*    /404.html   410!
+/reel         /404.html   410!
+/reel/*       /404.html   410!
+
 # Completar com a lista de 404 do Google Search Console
 # (Indexacao > Paginas > "Nao encontrada (404)")
 
