@@ -41,6 +41,10 @@
 /reel         /404.html   410!
 /reel/*       /404.html   410!
 
+# Páginas de serviço
+/departamento-pessoal.html   /departamento-pessoal   301!
+/departamento-pessoal/*      /departamento-pessoal   301!
+
 # Completar com a lista de 404 do Google Search Console
 # (Indexacao > Paginas > "Nao encontrada (404)")
 
