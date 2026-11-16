@@ -44,6 +44,14 @@
 # Páginas de serviço
 /departamento-pessoal.html   /departamento-pessoal   301!
 /departamento-pessoal/*      /departamento-pessoal   301!
+/contabilidade-empresarial.html   /contabilidade-empresarial   301!
+/escrita-fiscal.html              /escrita-fiscal              301!
+/escrita-fiscal/*                 /escrita-fiscal              301!
+/assessoria-societaria.html       /assessoria-societaria       301!
+/assessoria-societaria/*          /assessoria-societaria       301!
+/planejamento-tributario.html     /planejamento-tributario     301!
+/contabeis                        /contabilidade-empresarial   301!
+/contabeis/*                      /contabilidade-empresarial   301!
 
 # Completar com a lista de 404 do Google Search Console
 # (Indexacao > Paginas > "Nao encontrada (404)")
