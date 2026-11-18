@@ -985,6 +985,27 @@ footer .footer-serv{flex-basis:100%;order:9;text-align:center;font-size:.7rem!im
 footer .footer-seg{margin-top:4px!important;padding-top:0!important;border-top:none!important}
 @media(max-width:860px){.seg-grid{border-radius:0;overflow:visible}.porta-card{border-radius:20px}.cred-selos{grid-template-columns:1fr 1fr}#manifesto::before{color:rgba(255,255,255,.025)}}
 </style>
+<style id="avaliacoes-css">
+#avaliacoes{background:var(--gray);padding:100px 60px}
+.av-head{max-width:1200px;margin:0 auto 40px;display:flex;justify-content:space-between;align-items:flex-end;gap:24px}
+.av-title{font-size:clamp(1.8rem,3vw,2.8rem);font-weight:800;line-height:1.1;letter-spacing:-.02em;color:var(--navy);margin:0}
+.av-title .accent{color:var(--gold)}
+.av-nav{display:flex;gap:10px}
+.av-btn{width:48px;height:48px;border-radius:50%;border:1.5px solid var(--navy);background:transparent;color:var(--navy);font-size:1.1rem;cursor:pointer;transition:background .2s,color .2s}
+.av-btn:hover{background:var(--navy);color:#fff}
+.av-track{max-width:1200px;margin:0 auto;display:grid;grid-auto-flow:column;grid-auto-columns:calc((100% - 48px)/3);gap:24px;overflow-x:auto;scroll-snap-type:x mandatory;scroll-behavior:smooth;scrollbar-width:none;padding:4px 2px 8px}
+.av-track::-webkit-scrollbar{display:none}
+.av-card{scroll-snap-align:start;margin:0;background:#fff;border-radius:28px;padding:36px 34px;display:flex;flex-direction:column;gap:18px;box-shadow:0 1px 0 rgba(0,33,71,.04)}
+.av-stars{color:var(--gold);letter-spacing:.18em;font-size:1rem}
+.av-card blockquote{margin:0;flex:1;font-size:.98rem;line-height:1.75;color:var(--navy)}
+.av-card figcaption{display:flex;flex-direction:column;gap:2px;padding-top:18px;border-top:1px solid var(--line)}
+.av-nome{font-weight:700;font-size:.92rem;color:var(--navy)}
+.av-fonte{font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--mid)}
+.av-mais{max-width:1200px;margin:28px auto 0;font-size:.92rem}
+.av-mais a{color:var(--navy);text-decoration:underline;text-decoration-color:var(--gold);text-underline-offset:4px}
+@media(max-width:1000px){.av-track{grid-auto-columns:calc((100% - 24px)/2)}}
+@media(max-width:860px){#avaliacoes{padding:64px 16px}.av-track{grid-auto-columns:86%;gap:14px}.av-card{padding:28px 24px;border-radius:22px}.av-nav{display:none}}
+</style>
 </head>
 <body>
 
@@ -1517,6 +1538,53 @@ footer .footer-seg{margin-top:4px!important;padding-top:0!important;border-top:n
 })();
 </script>
 
+<!-- AVALIACOES -->
+<section id="avaliacoes" aria-label="Avaliações de clientes no Google">
+  <div class="av-head">
+    <div>
+      <p class="section-num">Avaliações no Google</p>
+      <h2 class="av-title">O que dizem <span class="accent">os clientes</span></h2>
+    </div>
+    <div class="av-nav">
+      <button type="button" class="av-btn" data-dir="-1" aria-label="Avaliação anterior">&#8592;</button>
+      <button type="button" class="av-btn" data-dir="1" aria-label="Próxima avaliação">&#8594;</button>
+    </div>
+  </div>
+  <div class="av-track" tabindex="0">
+      <figure class="av-card">
+        <div class="av-stars" aria-label="5 de 5 estrelas">★★★★★</div>
+        <blockquote>Sou cliente e recomendo muito a Vips contabilidade. São muito profissionais e personalizam a contabilidade de acordo com o que cada cliente precisa. Fácil comunicação e sempre estão disponíveis para tirar dúvidas! Recomendo muito!</blockquote>
+        <figcaption><span class="av-nome">Gabriela C.</span><span class="av-fonte">Avaliação no Google</span></figcaption>
+      </figure>
+      <figure class="av-card">
+        <div class="av-stars" aria-label="5 de 5 estrelas">★★★★★</div>
+        <blockquote>Empresa muito profissional, organizada e comprometida com seus clientes. Atendimento atencioso, equipe competente, esclarecimento de dúvidas e muita responsabilidade na prestação dos serviços. Transmite confiança e segurança. Recomendo!</blockquote>
+        <figcaption><span class="av-nome">Eliane C.</span><span class="av-fonte">Avaliação no Google</span></figcaption>
+      </figure>
+      <figure class="av-card">
+        <div class="av-stars" aria-label="5 de 5 estrelas">★★★★★</div>
+        <blockquote>Sou cliente e recomendo bastante! Profissionais de qualidade que estão sempre a disposição pra esclarecer dúvidas e que estão me ajudando muito na reforma tributária!!</blockquote>
+        <figcaption><span class="av-nome">Isabela A.</span><span class="av-fonte">Avaliação no Google</span></figcaption>
+      </figure>
+      <figure class="av-card">
+        <div class="av-stars" aria-label="5 de 5 estrelas">★★★★★</div>
+        <blockquote>Super indico o escritório Vip's. Profissionais qualificados, sempre bem atenciosos e muito experientes. Prestam um ótimo serviço na área contábil, fiscal, recursos humanos e legalização de empresas. Estou sendo muito bem atendida pela equipe. Estão de Parabéns.</blockquote>
+        <figcaption><span class="av-nome">Jaqueline C.</span><span class="av-fonte">Avaliação no Google</span></figcaption>
+      </figure>
+      <figure class="av-card">
+        <div class="av-stars" aria-label="5 de 5 estrelas">★★★★★</div>
+        <blockquote>Empresa de contabilidade de confiança! Equipe muito honesta e ágil. Há muitos anos atuando no mercado contábil.</blockquote>
+        <figcaption><span class="av-nome">Maria Clara A.</span><span class="av-fonte">Avaliação no Google</span></figcaption>
+      </figure>
+      <figure class="av-card">
+        <div class="av-stars" aria-label="5 de 5 estrelas">★★★★★</div>
+        <blockquote>Excelente escritório</blockquote>
+        <figcaption><span class="av-nome">Cristiani D.</span><span class="av-fonte">Avaliação no Google</span></figcaption>
+      </figure>
+  </div>
+  <p class="av-mais"><a href="https://www.google.com/maps/search/?api=1&amp;query=VIPS+Contabilidade+Rua+Cantagalo+74+S%C3%A3o+Paulo" target="_blank" rel="noopener">Ver todas as avaliações no Google</a></p>
+</section>
+
 <!-- CREDENCIAIS -->
 <section id="credenciais">
   <div class="cred-inner fade-up">
@@ -1989,5 +2057,17 @@ document.addEventListener('click', function (e) {
   @media print { .wa-fab { display: none; } }
 </style>
 <a href="https://wa.me/5511956081408?text=Ol%C3%A1%21%20Vim%20pela%20p%C3%A1gina%20inicial%20do%20site%20e%20quero%20contar%20a%20situa%C3%A7%C3%A3o%20da%20minha%20empresa.%0AFaturamento%20anual%20aproximado%3A%20%0ARegime%20atual%3A%20%0AO%20que%20quero%20resolver%3A%20" class="wa-fab" target="_blank" rel="noopener" aria-label="Falar com a VIPS pelo WhatsApp"><svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true" focusable="false"><path fill="currentColor" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></a>
+<script>
+(function(){var t=document.querySelector('#avaliacoes .av-track');if(!t)return;
+function step(){var c=t.querySelector('.av-card');return c?c.getBoundingClientRect().width+parseFloat(getComputedStyle(t).columnGap||24):300}
+function go(d){var max=t.scrollWidth-t.clientWidth-4;if(d>0&&t.scrollLeft>=max){t.scrollTo({left:0});}else if(d<0&&t.scrollLeft<=4){t.scrollTo({left:t.scrollWidth});}else{t.scrollBy({left:d*step()});}}
+document.querySelectorAll('#avaliacoes .av-btn').forEach(function(b){b.addEventListener('click',function(){go(+b.dataset.dir);reset();});});
+var reduz=window.matchMedia('(prefers-reduced-motion: reduce)').matches,timer=null,parado=false;
+function reset(){if(timer)clearInterval(timer);if(!reduz)timer=setInterval(function(){if(!parado&&!document.hidden)go(1);},6000);}
+['mouseenter','focusin','touchstart'].forEach(function(e){t.addEventListener(e,function(){parado=true;},{passive:true});});
+['mouseleave','focusout'].forEach(function(e){t.addEventListener(e,function(){parado=false;});});
+t.addEventListener('touchend',function(){setTimeout(function(){parado=false;},8000);},{passive:true});
+reset();})();
+</script>
 </body>
 </html>
