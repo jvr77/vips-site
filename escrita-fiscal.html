@@ -367,6 +367,19 @@
     @media (max-width: 860px) { .vt-grid { grid-template-columns: 1fr; } }
 </style>
 <style>@media (min-width: 861px) and (max-width: 1120px) { nav ul { gap: 22px !important; } }</style>
+<style id="v2">
+.hero-cta,.cta-final-inner>a{display:inline-flex!important;align-items:center;gap:14px;border-radius:999px!important;padding:15px 28px!important;font-size:.76rem!important;letter-spacing:.14em;text-transform:uppercase;font-weight:700!important;text-decoration:none}
+.hero-cta::after,.cta-final-inner>a::after{content:'';width:30px;height:10px;flex:none;background:currentColor;-webkit-mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='34' height='10' viewBox='0 0 34 10'%3E%3Cpath d='M0 5h32M28 1l4 4-4 4' fill='none' stroke='black' stroke-width='1.4'/%3E%3C/svg%3E") no-repeat center/contain;mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='34' height='10' viewBox='0 0 34 10'%3E%3Cpath d='M0 5h32M28 1l4 4-4 4' fill='none' stroke='black' stroke-width='1.4'/%3E%3C/svg%3E") no-repeat center/contain;transition:transform .2s}
+.hero-cta:hover::after,.cta-final-inner>a:hover::after{transform:translateX(5px)}
+.cta-final{background:transparent!important;padding:40px 60px 100px!important;text-align:left!important}
+.cta-final-inner{max-width:1180px!important;margin:0 auto;background:var(--navy);border-radius:44px;padding:76px 72px 68px;position:relative;overflow:hidden}
+.cta-final-inner::before{content:'';position:absolute;right:-90px;top:-90px;width:320px;height:320px;border:1.5px solid rgba(170,152,96,.35);border-radius:50%;pointer-events:none}
+.cta-final h2{text-transform:uppercase;font-size:clamp(2rem,4vw,3.8rem)!important;line-height:1!important;letter-spacing:-.035em;max-width:900px;position:relative}
+.cta-final p{max-width:560px;position:relative}
+.cta-final .cta-passos{margin-left:0!important;margin-right:0!important}
+@media(max-width:860px){.hero-cta,.cta-final-inner>a{letter-spacing:.1em;font-size:.72rem!important;padding:15px 22px!important}.cta-final{padding:24px 16px 56px!important}.cta-final-inner{padding:46px 26px 44px;border-radius:30px}.cta-final-inner::before{width:200px;height:200px;right:-80px;top:-80px}.hero-cta,.cta-final-inner>a{width:100%;justify-content:space-between;box-sizing:border-box}}
+.hero-title{text-transform:uppercase;line-height:1!important;letter-spacing:-.035em}
+</style>
 </head>
 <body>
 
@@ -398,7 +411,7 @@
   <p class="hero-label">Serviço</p>
   <h1 class="hero-title">Escrita fiscal e <span>apuração de impostos</span><br>em São Paulo</h1>
   <p class="hero-sub">Cada nota que entra e sai vira imposto, crédito ou obrigação. Uma classificação errada repetida todo mês aparece depois, no cruzamento da Receita ou da Sefaz. A VIPS faz a escrita fiscal de empresas de São Paulo desde 1995, e isso hoje inclui a transição para o IBS e a CBS.</p>
-  <a href="https://wa.me/5511956081408?text=Ol%C3%A1%21%20Vim%20pela%20p%C3%A1gina%20de%20escrita%20fiscal%20do%20site%20e%20quero%20revisar%20a%20apura%C3%A7%C3%A3o%20da%20minha%20empresa.%0AFaturamento%20anual%20aproximado%3A%20%0ARegime%20atual%3A%20%0AVendo%20produto%2C%20servi%C3%A7o%20ou%20os%20dois%3A%20" class="hero-cta">Revisar a apuração da minha empresa →</a>
+  <a href="https://wa.me/5511956081408?text=Ol%C3%A1%21%20Vim%20pela%20p%C3%A1gina%20de%20escrita%20fiscal%20do%20site%20e%20quero%20revisar%20a%20apura%C3%A7%C3%A3o%20da%20minha%20empresa.%0AFaturamento%20anual%20aproximado%3A%20%0ARegime%20atual%3A%20%0AVendo%20produto%2C%20servi%C3%A7o%20ou%20os%20dois%3A%20" class="hero-cta">Revisar a apuração da minha empresa</a>
 </header>
 
 <!-- BLOCO TECNICO -->
