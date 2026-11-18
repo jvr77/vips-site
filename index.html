@@ -969,6 +969,22 @@ h2.services-title{text-transform:uppercase;font-size:clamp(2.4rem,4vw,4rem);lett
 .faixa-diag a:hover::after{transform:translateX(5px)}
 @media(max-width:860px){.faixa-diag{padding:32px 16px}.faixa-diag-in{flex-direction:column;align-items:stretch;padding:30px 24px;border-radius:24px;gap:24px}.faixa-diag p{font-size:1.05rem}.faixa-diag a{justify-content:space-between;white-space:normal;letter-spacing:.1em;font-size:.72rem;padding:15px 22px}}
 </style>
+<style id="pente-fino">
+h2.services-title{text-transform:none;letter-spacing:-.025em}
+.services-grid,.seg-grid{border-radius:24px;overflow:hidden}
+.portas-grid{gap:16px}.porta-card{border-radius:24px}
+.sd-grid{border-radius:24px;overflow:hidden}
+.cred-selos{display:grid;grid-template-columns:repeat(2,minmax(150px,1fr));gap:16px;align-items:stretch}
+.cred-selo{border-radius:18px;display:flex;flex-direction:column;justify-content:center}
+.gal-caption{background:linear-gradient(to top,rgba(0,33,71,.94) 0%,rgba(0,33,71,.6) 55%,transparent 100%);padding-top:70px}
+.ci-value a{color:var(--navy);text-decoration:underline;text-decoration-color:var(--gold);text-underline-offset:4px}
+.ci-value a:hover{color:var(--gold)}
+.cta-block{border-radius:28px;border:none!important}
+.cta-block .btn-primary{border-radius:999px;padding:15px 28px}
+footer .footer-serv{flex-basis:100%;order:9;text-align:center;font-size:.7rem!important;color:rgba(255,255,255,.38);letter-spacing:.06em;margin:22px 0 0!important;padding-top:18px;border-top:1px solid rgba(255,255,255,.08)}
+footer .footer-seg{margin-top:4px!important;padding-top:0!important;border-top:none!important}
+@media(max-width:860px){.seg-grid{border-radius:0;overflow:visible}.porta-card{border-radius:20px}.cred-selos{grid-template-columns:1fr 1fr}#manifesto::before{color:rgba(255,255,255,.025)}}
+</style>
 </head>
 <body>
 
@@ -1166,7 +1182,7 @@ h2.services-title{text-transform:uppercase;font-size:clamp(2.4rem,4vw,4rem);lett
 </svg></div>
       <h3 class="porta-titulo">Reestruturar minha empresa</h3>
       <p class="porta-desc">Empresa que cresce com estrutura errada acumula risco. Reorganizamos o societário, o fiscal e o financeiro para que a base sustente o que vem pela frente.</p>
-      <a href="#contato" class="porta-cta">Solicitar diagnóstico</a>
+      <a href="#contato" class="porta-cta">Pedir o diagnóstico</a>
     </div>
     <div class="porta-card">
       <div class="porta-icon"><svg viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1181,7 +1197,7 @@ h2.services-title{text-transform:uppercase;font-size:clamp(2.4rem,4vw,4rem);lett
 </svg></div>
       <h3 class="porta-titulo">Planejamento tributário</h3>
       <p class="porta-desc">Está incluído para todos os clientes, sem custo extra. Fazemos porque acreditamos que não tem sentido cuidar da contabilidade de uma empresa sem olhar para o que ela pode economizar.</p>
-      <a href="#contato" class="porta-cta">Validar meu enquadramento</a>
+      <a href="#contato" class="porta-cta">Pedir o diagnóstico tributário</a>
     </div>
   </div>
 </section>
@@ -1516,7 +1532,8 @@ h2.services-title{text-transform:uppercase;font-size:clamp(2.4rem,4vw,4rem);lett
       </div>
       <div class="cred-selo">
         <p class="cred-selo-title">Processos</p>
-        <p class="cred-selo-name">Padrão ISO 9001</p>
+        <p class="cred-selo-name">Base ISO 9001</p>
+        <p class="cred-selo-sub">rotina moldada pela norma</p>
       </div>
       <div class="cred-selo">
         <p class="cred-selo-title">Parceiro desde</p>
