@@ -93,60 +93,76 @@
 
   <!-- SCHEMA: FAQPage -->
   <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "Médico paga menos imposto como PJ?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Na maior parte dos casos, a partir de um certo nível de receita, sim. A resposta exata depende do faturamento, da folha de pagamento e do regime possível para a atividade. Essa simulação, com os números reais, antecede qualquer proposta na VIPS."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "O que é equiparação hospitalar e quem pode usar?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "É a presunção reduzida do Lucro Presumido (8% para IRPJ e 12% para CSLL) aplicada a serviços hospitalares, prevista na Lei 9.249/95. A lei exige sociedade empresária e atendimento às normas da Anvisa, e a Receita analisa o serviço efetivamente prestado. Nem toda clínica se enquadra; a análise é caso a caso."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Minha clínica precisa de CNES?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Para atender convênios, credenciar a clínica junto a operadoras e permitir reembolso aos pacientes, sim. Clínica sem CNES ativo e atualizado recebe negativas mesmo com a documentação fiscal em dia."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Posso pagar ISS fixo em São Paulo?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Sociedades formadas apenas por profissionais da mesma habilitação podem pleitear o regime de Sociedade Uniprofissional, com ISS em valor fixo por profissional em vez de percentual sobre o faturamento. O enquadramento depende do contrato social e da forma de atuação, e se decide junto com a escolha do regime federal."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Tenho uma holding como sócia da clínica. Perco a redução de 60% do IBS e da CBS?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Pela lei, não: a redução de 60% acompanha o serviço de saúde listado no Anexo III da LC 214/2025 (art. 130), sem exigência sobre quem são os sócios. A proibição de sócio pessoa jurídica está na redução de 30% das profissões intelectuais (art. 127, § 1º, II, \"b\"), lista em que medicina e odontologia não aparecem. Onde a holding no quadro pesa é no Simples Nacional, vedado à empresa que tenha outra pessoa jurídica no capital (LC 123/2006, art. 3º, § 4º, I)."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Minha clínica recebe o valor cheio e repassa uma parte ao médico. Pago imposto sobre tudo?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Na leitura da Receita, sim. Quando a clínica presta o serviço em nome próprio, emite a nota e recebe o valor, o preço inteiro é receita bruta dela para IRPJ, CSLL, PIS e Cofins, mesmo com parte repassada depois aos médicos (Solução de Consulta Cosit 295/2019, com base no Decreto-Lei 1.598/1977, art. 12). A conta muda quando a clínica atua por conta e ordem do profissional, e são o contrato e quem emite a nota que mostram qual dos dois desenhos existe."
-        }
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Médico paga menos imposto como PJ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Na maior parte dos casos, a partir de um certo nível de receita, sim. A resposta exata depende do faturamento, da folha e do regime possível para a atividade. Essa simulação, com os seus números, é a primeira coisa que fazemos na conversa inicial, antes de qualquer proposta."
       }
-    ]
-  }
+    },
+    {
+      "@type": "Question",
+      "name": "O que é equiparação hospitalar e quem pode usar?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "É a presunção reduzida do Lucro Presumido (8% para IRPJ e 12% para CSLL) aplicada a serviços hospitalares, prevista na Lei 9.249/95. A lei exige sociedade empresária e atendimento às normas da Anvisa, e a Receita analisa o serviço efetivamente prestado, não o nome no contrato. Nem toda clínica se enquadra; a análise é caso a caso."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Minha clínica precisa de CNES?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Para atender convênios, credenciar a clínica junto a operadoras e permitir reembolso aos pacientes, sim. Clínica sem CNES ativo e atualizado recebe negativas mesmo com toda a documentação fiscal em dia. O cadastro precisa refletir o endereço e os profissionais atuais."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Posso pagar ISS fixo em São Paulo?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sociedades formadas apenas por profissionais da mesma habilitação podem pleitear o regime de SUP, com ISS em valor fixo por profissional. O município analisa o contrato social e a forma de atuação. Como o enquadramento depende do desenho societário, a decisão se toma junto com a escolha do regime federal, nunca isolada."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Qual o melhor regime tributário para clínica médica?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Depende da folha e do faturamento. No Simples, a medicina fica no Anexo III quando a folha, com o pró-labore, chega a 28% da receita, o fator R. Abaixo disso, vai para o Anexo V, mais caro. No Lucro Presumido, a base do IRPJ e da CSLL é de 32% da receita, ou de 8% e 12% com equiparação hospitalar. A partir de 2027, a CBS entra na conta com redução de 60% para os serviços de saúde. A comparação se refaz com os números de cada clínica."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Com a tributação de dividendos de 2026, ainda vale ter PJ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A Lei 15.270/2025 passou a reter 10% dos lucros acima de R$ 50 mil por mês pagos pela mesma empresa à mesma pessoa e criou um imposto mínimo para quem recebe mais de R$ 600 mil no ano, descontado o imposto já pago. Na PJ, a conta ganhou uma camada nova, e em renda muito alta a distância para o carnê-leão, que chega a 27,5%, ficou bem menor. O calendário também passou a pesar: concentrar a distribuição num mês dispara a retenção."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Tenho uma holding como sócia da clínica. Perco a redução de 60% do IBS e da CBS?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Pela lei, não: a redução de 60% acompanha o serviço de saúde listado no Anexo III da LC 214/2025 (art. 130), sem exigência sobre quem são os sócios. A proibição de sócio pessoa jurídica está na redução de 30% das profissões intelectuais (art. 127, § 1º, II, \"b\"), lista em que medicina e odontologia não aparecem. Onde a holding no quadro pesa é no Simples Nacional, vedado à empresa que tenha outra pessoa jurídica no capital (LC 123/2006, art. 3º, § 4º, I). Mais em Clínicas e consultórios na CBS e no IBS: o que a redução de 60% alcança."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Minha clínica recebe o valor cheio e repassa uma parte ao médico. Pago imposto sobre tudo?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Na leitura da Receita, sim. Quando a clínica presta o serviço em nome próprio, emite a nota e recebe o valor, o preço inteiro é receita bruta dela para IRPJ, CSLL, PIS e Cofins, mesmo com parte repassada depois aos médicos (Solução de Consulta Cosit 295/2019, com base no Decreto-Lei 1.598/1977, art. 12). A conta muda quando a clínica atua por conta e ordem do profissional, e são o contrato e quem emite a nota que mostram qual dos dois desenhos existe."
+      }
+    }
+  ]
+}
   </script>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -532,6 +548,14 @@
       <div class="mito">
         <p class="mito-q">Posso pagar ISS fixo em São Paulo?</p>
         <p class="mito-a">Sociedades formadas apenas por profissionais da mesma habilitação podem pleitear o regime de SUP, com ISS em valor fixo por profissional. O município analisa o contrato social e a forma de atuação. Como o enquadramento depende do desenho societário, a decisão se toma junto com a escolha do regime federal, nunca isolada.</p>
+      </div>
+      <div class="mito">
+        <p class="mito-q">Qual o melhor regime tributário para clínica médica?</p>
+        <p class="mito-a">Depende da folha e do faturamento. No Simples, a medicina fica no Anexo III quando a folha, com o pró-labore, chega a 28% da receita, o fator R. Abaixo disso, vai para o Anexo V, mais caro. No Lucro Presumido, a base do IRPJ e da CSLL é de 32% da receita, ou de 8% e 12% com equiparação hospitalar. A partir de 2027, a CBS entra na conta com redução de 60% para os serviços de saúde. A comparação se refaz com os números de cada clínica.</p>
+      </div>
+      <div class="mito">
+        <p class="mito-q">Com a tributação de dividendos de 2026, ainda vale ter PJ?</p>
+        <p class="mito-a">A Lei 15.270/2025 passou a reter 10% dos lucros acima de R$ 50 mil por mês pagos pela mesma empresa à mesma pessoa e criou um imposto mínimo para quem recebe mais de R$ 600 mil no ano, descontado o imposto já pago. Na PJ, a conta ganhou uma camada nova, e em renda muito alta a distância para o carnê-leão, que chega a 27,5%, ficou bem menor. O calendário também passou a pesar: concentrar a distribuição num mês dispara a retenção.</p>
       </div>
       <div class="mito">
         <p class="mito-q">Tenho uma holding como sócia da clínica. Perco a redução de 60% do IBS e da CBS?</p>
