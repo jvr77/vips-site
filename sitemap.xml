@@ -92,7 +92,7 @@
   </url>
   <url>
     <loc>https://vipsconsultores.com.br/conteudos/</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-19</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
@@ -200,5 +200,10 @@
     <lastmod>2026-11-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://vipsconsultores.com.br/conteudos/entidades-sem-fins-lucrativos-terceiro-setor-reforma-tributaria-imunidade</loc>
+    <lastmod>2026-11-19</lastmod>
+    <priority>0.7</priority>
   </url>
 </urlset>
