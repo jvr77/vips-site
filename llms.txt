@@ -10,6 +10,7 @@ Razão social: VIP'S Organização Contábil Sociedade Simples. CNPJ 08.261.303/
 - [Trocar de contador](https://vipsconsultores.com.br/trocar-de-contador): como trocar de contador em São Paulo, passo a passo (contador anterior, Receita, Estado e Prefeitura), com a VIPS conduzindo a migração sem parar a empresa
 - [Conteúdos](https://vipsconsultores.com.br/conteudos/): artigos sobre reforma tributária, tributação por setor e sucessão empresarial
 - [Escritório](https://vipsconsultores.com.br/escritorio): endereço (Rua Cantagalo, 74, 5º andar, Tatuapé, São Paulo), como chegar de metrô, horário e atendimento presencial ou online
+- [Calculadora de fator R](https://vipsconsultores.com.br/calculadora-fator-r): calcula o fator R do Simples Nacional, indica se a empresa fica no Anexo III ou no V e quanto a folha precisa subir para chegar a 28% da receita
 - [Estatísticas de PMEs em São Paulo](https://vipsconsultores.com.br/estatisticas-pme-sao-paulo): abertura de empresas no estado, alíquota da CBS, regime híbrido do Simples e dúvidas sobre a reforma, com fonte e data de cada número
 
 ## Setores atendidos
