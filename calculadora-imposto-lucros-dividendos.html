@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <!-- SEO PRIMÁRIO -->
+  <title>Calculadora do IR sobre lucros e dividendos em 2026 (Lei 15.270)</title>
+  <meta name="description" content="Simule a retenção de 10% sobre lucros acima de R$ 50 mil por mês e o imposto mínimo progressivo de quem recebe mais de R$ 600 mil por ano, pela Lei 15.270/2025." />
+  <meta name="author" content="VIPS Contabilidade" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://vipsconsultores.com.br/calculadora-imposto-lucros-dividendos" />
+
+  <!-- FAVICON -->
+  <link rel="icon" href="https://vipsconsultores.com.br/favicon.ico" sizes="48x48" />
+  <link rel="icon" type="image/png" sizes="512x512" href="https://vipsconsultores.com.br/favicon.png" />
+  <link rel="apple-touch-icon" href="https://vipsconsultores.com.br/apple-touch-icon.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <meta name="theme-color" content="#002147" />
+  
+  <!-- OPEN GRAPH -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="VIPS Contabilidade" />
+  <meta property="og:title" content="Calculadora do IR sobre lucros e dividendos em 2026 (Lei 15.270)" />
+  <meta property="og:description" content="Simule a retenção de 10% sobre lucros acima de R$ 50 mil por mês e o imposto mínimo progressivo de quem recebe mais de R$ 600 mil por ano, pela Lei 15.270/2025." />
+  <meta property="og:url" content="https://vipsconsultores.com.br/calculadora-imposto-lucros-dividendos" />
+  <meta property="og:image" content="https://vipsconsultores.com.br/og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:locale" content="pt_BR" />
+
+  <!-- TWITTER CARD -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Calculadora do IR sobre lucros e dividendos em 2026 (Lei 15.270)" />
+  <meta name="twitter:description" content="Simule a retenção de 10% sobre lucros acima de R$ 50 mil por mês e o imposto mínimo progressivo de quem recebe mais de R$ 600 mil por ano, pela Lei 15.270/2025." />
+  <meta name="twitter:image" content="https://vipsconsultores.com.br/og-image.png" />
+
+    <!-- SCHEMA: WebApplication -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Calculadora do IR sobre lucros e dividendos (Lei 15.270/2025)",
+  "url": "https://vipsconsultores.com.br/calculadora-imposto-lucros-dividendos",
+  "applicationCategory": "FinanceApplication",
+  "operatingSystem": "Qualquer navegador",
+  "inLanguage": "pt-BR",
+  "isAccessibleForFree": true,
+  "description": "Simule a retenção de 10% sobre lucros acima de R$ 50 mil por mês e o imposto mínimo progressivo de quem recebe mais de R$ 600 mil por ano, pela Lei 15.270/2025.",
+  "provider": {
+    "@id": "https://vipsconsultores.com.br/#organizacao",
+    "@type": "AccountingService",
+    "name": "VIPS Contabilidade",
+    "url": "https://vipsconsultores.com.br/"
+  }
+}
+  </script>
+
+  <!-- SCHEMA: BreadcrumbList -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Início",
+      "item": "https://vipsconsultores.com.br/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Calculadora do IR sobre lucros",
+      "item": "https://vipsconsultores.com.br/calculadora-imposto-lucros-dividendos"
+    }
+  ]
+}
+  </script>
+
+  <!-- SCHEMA: FAQPage -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Quando a empresa retém 10% sobre os lucros?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Quando uma mesma empresa paga a um mesmo sócio residente no Brasil mais de R$ 50 mil de lucros em um mesmo mês. A retenção é de 10% sobre o total pago no mês, sem nenhuma dedução, e é recalculada se houver mais de um pagamento no mesmo mês (Lei 9.250/1995, art. 6º-A, incluído pela Lei 15.270/2025). Abaixo de R$ 50 mil no mês, não há retenção."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Empresa do Simples Nacional também retém?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Para a Receita Federal, sim. No Perguntas e Respostas sobre a tributação de altas rendas, a Receita afirma que a retenção se aplica aos lucros pagos por empresas do Simples e que a isenção do art. 14 da LC 123/2006 deixou de valer nesse ponto. Parte dos advogados contesta, porque a isenção está em lei complementar. Enquanto não houver decisão judicial, quem não retém assume o risco da cobrança."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Como funciona o imposto mínimo de quem recebe mais de R$ 600 mil por ano?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A partir da declaração de 2027, ano-base 2026, quem soma mais de R$ 600 mil de rendimentos no ano, incluindo os isentos como lucros, entra na tributação mínima. A alíquota cresce em linha reta de 0% em R$ 600 mil até 10% em R$ 1,2 milhão. Do valor apurado se descontam o IR da declaração, o IR retido na fonte sobre esses rendimentos e o redutor. Ficam fora da conta, entre outros, ganhos de capital, poupança, LCI, LCA, CRI, CRA e doações por herança antecipada (Lei 9.250/1995, art. 16-A)."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "O que é o redutor do imposto mínimo?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "É o limite que evita que o lucro pague, somando empresa e sócio, mais que 34% de imposto de renda e CSLL. Se a alíquota efetiva de IRPJ e CSLL da empresa somada à alíquota efetiva do imposto mínimo passar de 34%, o excesso é devolvido como redutor (40% e 45% para seguradoras e instituições financeiras). Empresas fora do Lucro Real podem usar um cálculo simplificado do lucro contábil (Lei 9.250/1995, art. 16-B)."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Os lucros de 2025 também pagam?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Lucros apurados até 2025 ficam fora da retenção quando a distribuição foi aprovada até 31 de dezembro de 2025 e o pagamento segue os termos do ato de aprovação. Para o imposto mínimo, esses lucros ficam fora da base quando pagos em 2026, 2027 ou 2028, nas mesmas condições (Lei 9.250/1995, arts. 6º-A, § 3º, e 16-A, § 1º, XII)."
+      }
+    }
+  ]
+}
+  </script>
+
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --navy:   #002147;
+      --gold:   #AA9860;
+      --gray:   #F0F0F0;
+      --mid:    #4A6080;
+      --line:   rgba(0,33,71,0.12);
+      --white:  #ffffff;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      color: var(--navy);
+      background: var(--white);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a { text-decoration: none; color: inherit; }
+    ul { list-style: none; }
+
+    /* ─── NAV ─── */
+    nav {
+      position: sticky; top: 0; z-index: 100;
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 18px 60px;
+      background: rgba(255,255,255,0.92);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--line);
+    }
+    .nav-logo { display: flex; align-items: center; }
+    nav ul { display: flex; gap: 36px; align-items: center; }
+    nav ul a {
+      font-size: 0.9rem; font-weight: 500; color: var(--navy);
+      transition: color 0.2s;
+    }
+    nav ul a:hover { color: var(--gold); }
+    .nav-cta {
+      background: var(--navy); color: var(--white) !important;
+      padding: 10px 22px; border-radius: 6px; font-weight: 600 !important;
+      transition: opacity 0.2s;
+    }
+    .nav-cta:hover { opacity: 0.88; }
+    .nav-hamburger {
+      display: none; background: none; border: none; cursor: pointer;
+      flex-direction: column; gap: 5px; padding: 6px;
+    }
+    .nav-hamburger span {
+      width: 24px; height: 2px; background: var(--navy); transition: 0.3s;
+    }
+
+    /* ─── BREADCRUMB ─── */
+    .breadcrumb {
+      max-width: 1100px; margin: 0 auto; padding: 24px 60px 0;
+      font-size: 0.78rem; color: var(--mid); letter-spacing: 0.02em;
+    }
+    .breadcrumb a:hover { color: var(--gold); }
+    .breadcrumb span { color: var(--navy); font-weight: 600; }
+
+    /* ─── HERO ─── */
+    .hero {
+      max-width: 1100px; margin: 0 auto; padding: 60px 60px 80px;
+    }
+    .hero-label {
+      font-size: 0.7rem; letter-spacing: 0.26em; text-transform: uppercase;
+      color: var(--gold); margin-bottom: 20px; font-weight: 600;
+    }
+    .hero-title {
+      font-size: clamp(2.2rem, 5vw, 3.6rem); font-weight: 800;
+      line-height: 1.08; color: var(--navy); max-width: 780px;
+      margin-bottom: 28px;
+    }
+    .hero-title span { color: var(--gold); }
+    .hero-sub {
+      font-size: clamp(1rem, 1.6vw, 1.18rem); color: var(--mid);
+      max-width: 620px; line-height: 1.65; margin-bottom: 40px;
+    }
+    .hero-cta {
+      display: inline-block; background: var(--navy); color: var(--white);
+      padding: 16px 34px; border-radius: 6px; font-weight: 600;
+      font-size: 0.98rem; transition: opacity 0.2s;
+    }
+    .hero-cta:hover { opacity: 0.88; }
+
+    /* ─── SEÇÃO PADRÃO ─── */
+    .sec { padding: 90px 60px; }
+    .sec-navy { background: var(--navy); }
+    .sec-white { background: var(--white); border-top: 1px solid var(--line); }
+    .sec-gray { background: var(--gray); }
+    .sec-inner { max-width: 1100px; margin: 0 auto; }
+    .sec-label {
+      font-size: 0.7rem; letter-spacing: 0.26em; text-transform: uppercase;
+      color: var(--gold); margin-bottom: 14px; font-weight: 600;
+    }
+    .sec-title {
+      font-size: clamp(1.8rem, 3vw, 2.6rem); font-weight: 800;
+      line-height: 1.12; margin-bottom: 20px;
+    }
+    .sec-title span { color: var(--gold); }
+    .sec-navy .sec-title { color: var(--white); }
+    .sec-white .sec-title, .sec-gray .sec-title { color: var(--navy); }
+    .sec-lead {
+      font-size: 1rem; max-width: 640px; line-height: 1.75; margin-bottom: 48px;
+    }
+    .sec-navy .sec-lead { color: rgba(255,255,255,0.6); }
+    .sec-white .sec-lead, .sec-gray .sec-lead { color: var(--mid); }
+
+    /* ─── SINAIS (grid de cards) ─── */
+    .sinais-grid {
+      display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px;
+      background: var(--line);
+    }
+    .sinal {
+      background: var(--gray); padding: 40px 34px;
+    }
+    .sinal-num {
+      font-size: 0.65rem; letter-spacing: 0.2em; color: var(--gold);
+      font-weight: 700; margin-bottom: 18px;
+    }
+    .sinal-t { font-size: 1.05rem; font-weight: 700; color: var(--navy); margin-bottom: 12px; }
+    .sinal-d { font-size: 0.88rem; color: var(--mid); line-height: 1.7; }
+
+    /* ─── COMO FUNCIONA (passos) ─── */
+    .passos { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0; position: relative; }
+    .passos::before {
+      content: ''; position: absolute; top: 36px; left: 12%; width: 76%; height: 1px;
+      background: rgba(255,255,255,0.15); z-index: 0;
+    }
+    .passo { padding: 0 28px; text-align: center; position: relative; z-index: 1; }
+    .passo-num {
+      width: 72px; height: 72px; border-radius: 50%;
+      background: var(--navy); border: 2px solid rgba(255,255,255,0.2);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.3rem; font-weight: 800; color: var(--white);
+      margin: 0 auto 26px;
+    }
+    .passo-t { font-size: 1.02rem; font-weight: 700; color: var(--white); margin-bottom: 12px; }
+    .passo-d { font-size: 0.85rem; color: rgba(255,255,255,0.55); line-height: 1.7; }
+
+    /* ─── MITOS (lista) ─── */
+    .mitos { display: grid; gap: 1px; background: var(--line); }
+    .mito { background: var(--white); padding: 32px 36px; }
+    .mito-q {
+      font-size: 1.02rem; font-weight: 700; color: var(--navy);
+      margin-bottom: 10px; display: flex; align-items: baseline; gap: 12px;
+    }
+    .mito-q::before { content: '—'; color: var(--gold); font-weight: 800; }
+    .mito-a { font-size: 0.92rem; color: var(--mid); line-height: 1.7; padding-left: 26px; }
+
+    /* ─── CTA FINAL ─── */
+    .cta-final {
+      background: var(--navy); padding: 96px 60px; text-align: center;
+    }
+    .cta-final-inner { max-width: 680px; margin: 0 auto; }
+    .cta-final h2 {
+      font-size: clamp(1.8rem, 3.4vw, 2.8rem); font-weight: 800;
+      color: var(--white); line-height: 1.12; margin-bottom: 20px;
+    }
+    .cta-final h2 span { color: var(--gold); }
+    .cta-final p {
+      font-size: 1rem; color: rgba(255,255,255,0.6); line-height: 1.7;
+      margin-bottom: 36px;
+    }
+    .cta-final a {
+      display: inline-block; background: var(--gold); color: var(--navy);
+      padding: 16px 40px; border-radius: 6px; font-weight: 700;
+      font-size: 1rem; transition: opacity 0.2s;
+    }
+    .cta-final a:hover { opacity: 0.9; }
+
+    /* ─── FOOTER ─── */
+    footer {
+      background: var(--navy); padding: 40px 60px;
+      display: flex; align-items: center; justify-content: space-between;
+      gap: 24px; border-top: 1px solid rgba(255,255,255,0.08);
+    }
+    .footer-logo { font-size: 1.05rem; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; color: var(--white); }
+    .footer-links { display: flex; gap: 30px; }
+    .footer-links a { font-size: 0.85rem; color: rgba(255,255,255,0.6); transition: color 0.2s; }
+    .footer-links a:hover { color: var(--gold); }
+    .footer-copy { font-size: 0.7rem; color: rgba(255,255,255,0.38); letter-spacing: 0.06em; }
+
+    /* ─── RESPONSIVO ─── */
+    @media (max-width: 860px) {
+      nav { padding: 16px 24px; }
+      nav ul {
+        display: none; position: absolute; top: 100%; left: 0; right: 0;
+        flex-direction: column; gap: 0; background: var(--white);
+        border-bottom: 1px solid var(--line); padding: 12px 24px;
+      }
+      nav ul.open { display: flex; }
+      nav ul li { width: 100%; padding: 12px 0; border-top: 1px solid var(--line); }
+      nav ul li:first-child { border-top: none; }
+      .nav-hamburger { display: flex; }
+      .breadcrumb, .hero { padding-left: 24px; padding-right: 24px; }
+      .sec, .cta-final { padding-left: 24px; padding-right: 24px; }
+      .sinais-grid { grid-template-columns: 1fr; }
+      .passos { grid-template-columns: 1fr; gap: 40px; }
+      .passos::before { display: none; }
+      footer { flex-direction: column; text-align: center; gap: 18px; }
+      .footer-links { flex-direction: column; gap: 12px; align-items: center; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      * { transition: none !important; }
+    }
+  </style>
+<style>@media (min-width: 861px) and (max-width: 1120px) { nav ul { gap: 22px !important; } }</style>
+<style id="v2">
+.hero-cta,.cta-final-inner>a{display:inline-flex!important;align-items:center;gap:14px;border-radius:999px!important;padding:15px 28px!important;font-size:.76rem!important;letter-spacing:.14em;text-transform:uppercase;font-weight:700!important;text-decoration:none}
+.hero-cta::after,.cta-final-inner>a::after{content:'';width:30px;height:10px;flex:none;background:currentColor;-webkit-mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='34' height='10' viewBox='0 0 34 10'%3E%3Cpath d='M0 5h32M28 1l4 4-4 4' fill='none' stroke='black' stroke-width='1.4'/%3E%3C/svg%3E") no-repeat center/contain;mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='34' height='10' viewBox='0 0 34 10'%3E%3Cpath d='M0 5h32M28 1l4 4-4 4' fill='none' stroke='black' stroke-width='1.4'/%3E%3C/svg%3E") no-repeat center/contain;transition:transform .2s}
+.hero-cta:hover::after,.cta-final-inner>a:hover::after{transform:translateX(5px)}
+.cta-final{background:transparent!important;padding:40px 60px 100px!important;text-align:left!important}
+.cta-final-inner{max-width:1180px!important;margin:0 auto;background:var(--navy);border-radius:44px;padding:76px 72px 68px;position:relative;overflow:hidden}
+.cta-final-inner::before{content:'';position:absolute;right:-90px;top:-90px;width:320px;height:320px;border:1.5px solid rgba(170,152,96,.35);border-radius:50%;pointer-events:none}
+.cta-final h2{text-transform:uppercase;font-size:clamp(2rem,4vw,3.8rem)!important;line-height:1!important;letter-spacing:-.035em;max-width:900px;position:relative}
+.cta-final p{max-width:560px;position:relative}
+.cta-final .cta-passos{margin-left:0!important;margin-right:0!important}
+@media(max-width:860px){.hero-cta,.cta-final-inner>a{letter-spacing:.1em;font-size:.72rem!important;padding:15px 22px!important}.cta-final{padding:24px 16px 56px!important}.cta-final-inner{padding:46px 26px 44px;border-radius:30px}.cta-final-inner::before{width:200px;height:200px;right:-80px;top:-80px}.hero-cta,.cta-final-inner>a{width:100%;justify-content:space-between;box-sizing:border-box}}
+.hero-title{text-transform:uppercase;line-height:1!important;letter-spacing:-.035em}
+</style>
+<style id="cta-v3">
+.cta-eyebrow{display:block;font-size:.7rem;letter-spacing:.26em;text-transform:uppercase;color:var(--gold);font-weight:700;margin:0 0 18px;position:relative}
+.faixa-diag{padding:56px 60px;background:#fff}
+.faixa-diag-in{max-width:1180px;margin:0 auto;border:1.5px solid var(--gold);border-radius:32px;padding:40px 48px;display:flex;align-items:center;justify-content:space-between;gap:40px}
+.faixa-diag p{margin:0;font-size:1.22rem;line-height:1.5;font-weight:600;color:var(--navy);max-width:640px}
+.faixa-diag a{flex:none;display:inline-flex;align-items:center;gap:14px;border-radius:999px;padding:15px 28px;background:var(--gold);color:var(--navy);font-size:.76rem;letter-spacing:.14em;text-transform:uppercase;font-weight:700;text-decoration:none;white-space:nowrap}
+.faixa-diag a::after{content:'';width:30px;height:10px;flex:none;background:currentColor;-webkit-mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='34' height='10' viewBox='0 0 34 10'%3E%3Cpath d='M0 5h32M28 1l4 4-4 4' fill='none' stroke='black' stroke-width='1.4'/%3E%3C/svg%3E") no-repeat center/contain;mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='34' height='10' viewBox='0 0 34 10'%3E%3Cpath d='M0 5h32M28 1l4 4-4 4' fill='none' stroke='black' stroke-width='1.4'/%3E%3C/svg%3E") no-repeat center/contain;transition:transform .2s}
+.faixa-diag a:hover::after{transform:translateX(5px)}
+@media(max-width:860px){.faixa-diag{padding:32px 16px}.faixa-diag-in{flex-direction:column;align-items:stretch;padding:30px 24px;border-radius:24px;gap:24px}.faixa-diag p{font-size:1.05rem}.faixa-diag a{justify-content:space-between;white-space:normal;letter-spacing:.1em;font-size:.72rem;padding:15px 22px}}
+</style>
+
+<style id="lucros">
+  .fr-box { display: grid; grid-template-columns: 1fr 1.25fr; gap: 28px; margin-top: 36px; align-items: start; }
+  .fr-form, .fr-out { background: #fff; border-radius: 24px; padding: 32px; min-width: 0; scroll-margin-top: 96px; }
+  .fr-field { margin-bottom: 22px; }
+  .fr-field label { display: block; font-weight: 600; color: var(--navy); font-size: 0.95rem; margin-bottom: 6px; }
+  .fr-field small { display: block; color: var(--mid); font-size: 0.8rem; line-height: 1.5; margin-bottom: 10px; }
+  .fr-in { display: flex; align-items: center; border: 1px solid #d5d9e0; border-radius: 14px; padding: 0 16px; background: #fafafa; }
+  .fr-in:focus-within { border-color: var(--gold); background: #fff; }
+  .fr-in span { color: var(--mid); font-weight: 500; margin-right: 8px; }
+  .fr-in input { flex: 1; border: 0; background: transparent; font: inherit; font-size: 1.1rem; color: var(--navy); padding: 14px 0; outline: none; min-width: 0; }
+  .fr-btn { width: 100%; border: 0; border-radius: 999px; background: var(--navy); color: #fff; font: inherit; font-weight: 600; padding: 16px; cursor: pointer; font-size: 1rem; }
+  .fr-btn:hover { background: #0a2f5c; }
+  .fr-vazio { color: var(--mid); font-size: 0.95rem; line-height: 1.7; }
+  .fr-res { display: none; }
+  .fr-top { display: flex; align-items: baseline; gap: 14px; flex-wrap: wrap; padding-bottom: 20px; border-bottom: 1px solid #eceef2; }
+  .fr-num { font-size: 3rem; font-weight: 800; color: var(--navy); line-height: 1; }
+  .fr-tag { display: inline-block; border-radius: 999px; padding: 6px 14px; font-size: 0.8rem; font-weight: 700; letter-spacing: 0.04em; }
+  .fr-tag.iii { background: rgba(170,152,96,0.18); color: #6f6236; }
+  .fr-tag.v { background: rgba(0,33,71,0.08); color: var(--navy); }
+  .fr-msg { margin: 16px 0 0; color: var(--navy); line-height: 1.65; font-size: 0.95rem; }
+  .fr-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 20px; }
+  .fr-cell { background: var(--gray, #F0F0F0); border-radius: 16px; padding: 16px 18px; }
+  .fr-cell.ativo { outline: 2px solid var(--gold); background: #fff; }
+  .fr-cell p { margin: 0; }
+  .fr-cell .k { font-size: 0.75rem; color: var(--mid); letter-spacing: 0.05em; text-transform: uppercase; font-weight: 600; }
+  .fr-cell .v { font-size: 1.35rem; font-weight: 700; color: var(--navy); margin-top: 6px; }
+  .fr-cell .s { font-size: 0.8rem; color: var(--mid); margin-top: 4px; }
+  .fr-meta { margin-top: 16px; background: var(--navy); color: #fff; border-radius: 16px; padding: 18px 20px; line-height: 1.6; font-size: 0.92rem; }
+  .fr-meta b { color: var(--gold); font-weight: 700; }
+  .fr-aviso { margin-top: 14px; font-size: 0.78rem; color: var(--mid); line-height: 1.6; }
+  .fr-cta { display: inline-block; margin-top: 18px; color: var(--navy); font-weight: 600; text-decoration: underline; text-decoration-color: var(--gold); text-underline-offset: 4px; }
+  .fr-links { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 24px; }
+  .fr-links a { border: 1px solid rgba(170,152,96,0.6); border-radius: 999px; padding: 8px 16px; font-size: 0.85rem; color: #fff; text-decoration: none; }
+  .fr-links a:hover { background: rgba(170,152,96,0.18); }
+  @media (max-width: 860px) {
+    .fr-box { grid-template-columns: minmax(0, 1fr); }
+    .fr-form, .fr-out { padding: 24px 20px; }
+    .fr-num { font-size: 2.4rem; }
+  }
+  @media (max-width: 420px) { .fr-grid { grid-template-columns: 1fr; } }
+
+  .fr-field select { flex: 1; border: 0; background: transparent; font: inherit; font-size: 1rem; color: var(--navy); padding: 14px 0; outline: none; min-width: 0; }
+  .fr-in.sem-prefixo { padding-left: 16px; }
+  .fr-mais { margin: 4px 0 22px; }
+  .fr-mais summary { cursor: pointer; color: var(--navy); font-weight: 600; font-size: 0.9rem; text-decoration: underline; text-decoration-color: var(--gold); text-underline-offset: 4px; }
+  .fr-mais[open] summary { margin-bottom: 16px; }
+  .fr-linhas { margin-top: 18px; border-top: 1px solid #eceef2; }
+  .fr-linha { display: flex; justify-content: space-between; gap: 16px; padding: 11px 0; border-bottom: 1px solid #eceef2; font-size: 0.92rem; color: var(--navy); }
+  .fr-linha span:last-child { font-weight: 600; white-space: nowrap; }
+  .fr-linha.total { border-bottom: 0; font-size: 1rem; }
+  .fr-linha.total span:last-child { font-weight: 800; }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="/" class="nav-logo" aria-label="VIPS Contabilidade">
+    <img src="https://vipsconsultores.com.br/favicon.png" alt="VIPS Contabilidade" style="height:36px; width:auto;">
+  </a>
+  <ul id="navmenu">
+    <li><a href="/#intro">Sobre</a></li>
+    <li><a href="/#servicos">Serviços</a></li>
+    <li><a href="/#segmentos">Segmentos</a></li>
+    <li><a href="/conteudos/">Conteúdos</a></li>
+    <li><a href="/#contato">Contato</a></li>
+    <li><a href="https://onvio.com.br/clientcenter/company/B908D21A1B4D493383CE7F152F48CC7E" class="nav-cta">Portal do Cliente</a></li>
+  </ul>
+  <button class="nav-hamburger" id="hamburger" onclick="toggleMenu()" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- BREADCRUMB -->
+<div class="breadcrumb">
+  <a href="/">Início</a> &nbsp;/&nbsp; <span>Calculadora do IR sobre lucros</span>
+</div>
+
+<!-- HERO -->
+<header class="hero">
+  <p class="hero-label">Calculadora</p>
+  <h1 class="hero-title">Quanto de imposto o sócio<br>paga sobre os <span>lucros em 2026?</span></h1>
+  <p class="hero-sub">Desde janeiro de 2026, lucro acima de R$ 50 mil por mês tem retenção de 10%, e quem recebe mais de R$ 600 mil por ano entra no imposto mínimo, com alíquota progressiva até 10%. Coloque os números do sócio e veja a conta do ano.</p>
+  <a href="#calculadora" class="hero-cta">Simular o imposto sobre os lucros</a>
+</header>
+
+<!-- CALCULADORA -->
+<section class="sec sec-gray" id="calculadora">
+  <div class="sec-inner">
+    <p class="sec-label">Calculadora</p>
+    <h2 class="sec-title">A conta de um sócio,<br>do mês <span>ao ajuste anual</span></h2>
+    <div class="fr-box">
+      <form class="fr-form" id="lc-form" novalidate>
+        <div class="fr-field">
+          <label for="lc-mes">Lucro distribuído por mês</label>
+          <small>Quanto a empresa paga ao sócio de lucros em cada mês, sobre resultados de 2026 em diante.</small>
+          <div class="fr-in"><span>R$</span><input id="lc-mes" class="lc-money" inputmode="numeric" autocomplete="off" placeholder="80.000,00"></div>
+        </div>
+        <div class="fr-field">
+          <label for="lc-n">Meses com distribuição no ano</label>
+          <small>De 1 a 12.</small>
+          <div class="fr-in sem-prefixo"><input id="lc-n" inputmode="numeric" autocomplete="off" value="12"></div>
+        </div>
+        <div class="fr-field">
+          <label for="lc-out">Outros rendimentos do sócio no ano</label>
+          <small>Pró-labore, salários, aluguéis e demais rendimentos. Ficam fora poupança, LCI, LCA, CRI, CRA e ganhos de capital.</small>
+          <div class="fr-in"><span>R$</span><input id="lc-out" class="lc-money" inputmode="numeric" autocomplete="off" placeholder="180.000,00"></div>
+        </div>
+        <div class="fr-field">
+          <label for="lc-ir">IR do ano sobre esses outros rendimentos</label>
+          <small>O imposto da declaração e o retido na fonte. Para quem só tem pró-labore, fica perto do IR descontado no ano.</small>
+          <div class="fr-in"><span>R$</span><input id="lc-ir" class="lc-money" inputmode="numeric" autocomplete="off" placeholder="40.000,00"></div>
+        </div>
+        <details class="fr-mais">
+          <summary>Considerar o redutor da empresa</summary>
+          <div class="fr-field">
+            <label for="lc-pj">IRPJ e CSLL da empresa sobre o lucro contábil</label>
+            <small>Alíquota efetiva no ano: imposto de renda e CSLL devidos divididos pelo lucro antes desses tributos. Se não souber, deixe em branco.</small>
+            <div class="fr-in sem-prefixo"><input id="lc-pj" inputmode="decimal" autocomplete="off" placeholder="Ex.: 25"><span style="margin:0 0 0 8px">%</span></div>
+          </div>
+        </details>
+        <button type="submit" class="fr-btn">Calcular</button>
+      </form>
+      <div class="fr-out" aria-live="polite">
+        <p class="fr-vazio" id="lc-vazio">Preencha o lucro mensal e os outros rendimentos para ver a retenção mês a mês, a alíquota do imposto mínimo e o saldo do ajuste anual.</p>
+        <div class="fr-res" id="lc-res">
+          <div class="fr-top">
+            <span class="fr-num" id="lc-carga">0%</span>
+            <span class="fr-tag v" id="lc-tag">sobre os lucros</span>
+          </div>
+          <p class="fr-msg" id="lc-msg"></p>
+          <div class="fr-grid">
+            <div class="fr-cell"><p class="k">Retido por mês</p><p class="v" id="lc-ret"></p><p class="s" id="lc-ret-s"></p></div>
+            <div class="fr-cell"><p class="k">Alíquota mínima</p><p class="v" id="lc-aliq"></p><p class="s" id="lc-aliq-s"></p></div>
+          </div>
+          <div class="fr-linhas" id="lc-linhas"></div>
+          <p class="fr-aviso" id="lc-aviso">Estimativa pela Lei 15.270/2025 para um sócio que recebe lucros de uma única empresa, sobre resultados de 2026 em diante. Considera a posição da Receita Federal de que a retenção vale também para o Simples Nacional.</p>
+          <a class="fr-cta" href="https://wa.me/5511956081408?text=Ol%C3%A1%21%20Usei%20a%20calculadora%20de%20IR%20sobre%20lucros%20do%20site%20e%20quero%20fazer%20a%20conta%20completa.%0ARegime%20da%20empresa%3A%20%0AN%C3%BAmero%20de%20s%C3%B3cios%3A%20">Fazer a conta completa com a VIPS</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- COMO FUNCIONA -->
+<section class="sec sec-white">
+  <div class="sec-inner">
+    <p class="sec-label">Como a conta funciona</p>
+    <h2 class="sec-title">Três regras novas<br>sobre o <span>mesmo lucro</span></h2>
+    <div class="sinais-grid">
+      <div class="sinal">
+        <p class="sinal-num">01</p>
+        <h3 class="sinal-t">Retenção no mês</h3>
+        <p class="sinal-d">Acima de R$ 50 mil pagos pela mesma empresa ao mesmo sócio no mês, a empresa retém 10% sobre o total, e não só sobre o excedente (Lei 9.250/1995, art. 6º-A). Até R$ 50 mil no mês, nada é retido.</p>
+      </div>
+      <div class="sinal">
+        <p class="sinal-num">02</p>
+        <h3 class="sinal-t">Imposto mínimo no ano</h3>
+        <p class="sinal-d">Na declaração, quem soma mais de R$ 600 mil no ano paga no mínimo uma alíquota que vai de 0% a 10% até R$ 1,2 milhão, pela fórmula renda ÷ 60.000 − 10 (art. 16-A). O IR já pago e o valor retido nos meses são descontados.</p>
+      </div>
+      <div class="sinal">
+        <p class="sinal-num">03</p>
+        <h3 class="sinal-t">Redutor de 34%</h3>
+        <p class="sinal-d">Se a empresa já pagou IRPJ e CSLL altos sobre o lucro, a soma com o imposto mínimo do sócio fica limitada a 34%, e o excesso volta como redutor (art. 16-B). Na prática, ajuda mais quem tem empresa no Lucro Real.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAIXA DIAGNOSTICO -->
+<section class="faixa-diag">
+  <div class="faixa-diag-in">
+    <div><span class="cta-eyebrow">Diagnóstico sem custo</span><p>Mande o regime da empresa, o lucro do ano e a forma de retirada dos sócios. A gente faz a conta completa, com o redutor.</p></div>
+    <a href="https://wa.me/5511956081408?text=Ol%C3%A1%21%20Usei%20a%20calculadora%20de%20IR%20sobre%20lucros%20do%20site%20e%20quero%20fazer%20a%20conta%20completa.%0ARegime%20da%20empresa%3A%20%0AN%C3%BAmero%20de%20s%C3%B3cios%3A%20">Pedir a conta completa</a>
+  </div>
+</section>
+
+<!-- ANTES DE MUDAR A RETIRADA -->
+<section class="sec sec-navy">
+  <div class="sec-inner">
+    <p class="sec-label">Antes de mudar a retirada</p>
+    <h2 class="sec-title">O calendário da distribuição<br><span>mudou de peso.</span></h2>
+    <p class="sec-lead">O mesmo lucro anual pode ter retenção ou não, dependendo de como é pago mês a mês. A retenção é antecipação do imposto mínimo e volta no ajuste quando o sócio não chega a dever esse valor. Mas dinheiro retido durante o ano é caixa que sai antes, e o imposto mínimo olha para todos os rendimentos do sócio, inclusive os de outras empresas. A VIPS revisa a forma de retirada dos sócios com os números de cada empresa.</p>
+    <div class="fr-links">
+      <a href="/planejamento-tributario">Planejamento tributário</a>
+      <a href="/contabilidade-para-medicos">Médicos e clínicas</a>
+      <a href="/contabilidade-para-servicos-profissionais">Advogados, engenheiros e consultores</a>
+      <a href="/contabilidade-para-holdings">Holdings</a>
+      <a href="/calculadora-fator-r">Calculadora de fator R</a>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="sec sec-gray">
+  <div class="sec-inner">
+    <p class="sec-label">Perguntas frequentes</p>
+    <h2 class="sec-title">O que mais perguntam sobre<br>o <span>imposto nos lucros</span></h2>
+    <div class="mitos">
+      <div class="mito">
+        <p class="mito-q">Quando a empresa retém 10% sobre os lucros?</p>
+        <p class="mito-a">Quando uma mesma empresa paga a um mesmo sócio residente no Brasil mais de R$ 50 mil de lucros em um mesmo mês. A retenção é de 10% sobre o total pago no mês, sem nenhuma dedução, e é recalculada se houver mais de um pagamento no mesmo mês (Lei 9.250/1995, art. 6º-A, incluído pela Lei 15.270/2025). Abaixo de R$ 50 mil no mês, não há retenção.</p>
+      </div>
+      <div class="mito">
+        <p class="mito-q">Empresa do Simples Nacional também retém?</p>
+        <p class="mito-a">Para a Receita Federal, sim. No Perguntas e Respostas sobre a tributação de altas rendas, a Receita afirma que a retenção se aplica aos lucros pagos por empresas do Simples e que a isenção do art. 14 da LC 123/2006 deixou de valer nesse ponto. Parte dos advogados contesta, porque a isenção está em lei complementar. Enquanto não houver decisão judicial, quem não retém assume o risco da cobrança.</p>
+      </div>
+      <div class="mito">
+        <p class="mito-q">Como funciona o imposto mínimo de quem recebe mais de R$ 600 mil por ano?</p>
+        <p class="mito-a">A partir da declaração de 2027, ano-base 2026, quem soma mais de R$ 600 mil de rendimentos no ano, incluindo os isentos como lucros, entra na tributação mínima. A alíquota cresce em linha reta de 0% em R$ 600 mil até 10% em R$ 1,2 milhão. Do valor apurado se descontam o IR da declaração, o IR retido na fonte sobre esses rendimentos e o redutor. Ficam fora da conta, entre outros, ganhos de capital, poupança, LCI, LCA, CRI, CRA e doações por herança antecipada (Lei 9.250/1995, art. 16-A).</p>
+      </div>
+      <div class="mito">
+        <p class="mito-q">O que é o redutor do imposto mínimo?</p>
+        <p class="mito-a">É o limite que evita que o lucro pague, somando empresa e sócio, mais que 34% de imposto de renda e CSLL. Se a alíquota efetiva de IRPJ e CSLL da empresa somada à alíquota efetiva do imposto mínimo passar de 34%, o excesso é devolvido como redutor (40% e 45% para seguradoras e instituições financeiras). Empresas fora do Lucro Real podem usar um cálculo simplificado do lucro contábil (Lei 9.250/1995, art. 16-B).</p>
+      </div>
+      <div class="mito">
+        <p class="mito-q">Os lucros de 2025 também pagam?</p>
+        <p class="mito-a">Lucros apurados até 2025 ficam fora da retenção quando a distribuição foi aprovada até 31 de dezembro de 2025 e o pagamento segue os termos do ato de aprovação. Para o imposto mínimo, esses lucros ficam fora da base quando pagos em 2026, 2027 ou 2028, nas mesmas condições (Lei 9.250/1995, arts. 6º-A, § 3º, e 16-A, § 1º, XII).</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA FINAL -->
+<section class="cta-final">
+  <div class="cta-final-inner">
+    <span class="cta-eyebrow">Diagnóstico sem custo</span><h2>A retirada dos sócios<br>agora <span>entra na conta.</span></h2>
+    <p>Com o lucro, o regime da empresa e os rendimentos de cada sócio, a VIPS mostra quanto fica retido, quanto volta no ajuste e qual calendário de distribuição faz sentido.</p>
+    <a href="https://wa.me/5511956081408?text=Ol%C3%A1%21%20Usei%20a%20calculadora%20de%20IR%20sobre%20lucros%20do%20site%20e%20quero%20fazer%20a%20conta%20completa.%0ARegime%20da%20empresa%3A%20%0AN%C3%BAmero%20de%20s%C3%B3cios%3A%20">Fazer a conta completa com a VIPS</a>
+  </div>
+</section>
+
+<script>
+(function () {
+  function num(v) { v = (v || '').replace(/[^0-9,]/g, '').replace(',', '.'); return parseFloat(v) || 0; }
+  function brl(v) { return 'R$ ' + v.toLocaleString('pt-BR', { minimumFractionDigits: 2, maximumFractionDigits: 2 }); }
+  function pct(v) { return (v * 100).toLocaleString('pt-BR', { minimumFractionDigits: 2, maximumFractionDigits: 2 }) + '%'; }
+  function mask(el) {
+    el.addEventListener('input', function () {
+      var d = el.value.replace(/\D/g, '').replace(/^0+/, '');
+      if (!d) { el.value = ''; return; }
+      while (d.length < 3) d = '0' + d;
+      el.value = d.slice(0, -2).replace(/\B(?=(\d{3})+(?!\d))/g, '.') + ',' + d.slice(-2);
+    });
+  }
+  // aliquota da tributacao minima (art. 16-A, par. 2)
+  function aliq(r) { if (r <= 600000) return 0; if (r >= 1200000) return 0.10; return (r / 60000 - 10) / 100; }
+  var ids = ['lc-mes', 'lc-out', 'lc-ir'];
+  ids.forEach(function (i) { mask(document.getElementById(i)); });
+  document.getElementById('lc-form').addEventListener('submit', function (e) {
+    e.preventDefault();
+    var mes = num(document.getElementById('lc-mes').value);
+    var n = Math.round(num(document.getElementById('lc-n').value)); if (!n || n < 1) n = 1; if (n > 12) n = 12;
+    document.getElementById('lc-n').value = n;
+    var out = num(document.getElementById('lc-out').value), ir = num(document.getElementById('lc-ir').value);
+    var pjRaw = document.getElementById('lc-pj').value.trim(), pj = pjRaw ? num(pjRaw) / 100 : null;
+    var vazio = document.getElementById('lc-vazio'), res = document.getElementById('lc-res');
+    if (!mes) { vazio.textContent = 'Informe o lucro distribuído por mês para calcular.'; vazio.style.display = 'block'; res.style.display = 'none'; return; }
+    vazio.style.display = 'none'; res.style.display = 'block';
+    var lucros = mes * n;
+    var retMes = mes > 50000 ? mes * 0.10 : 0, retAno = retMes * n;
+    var base = lucros + out, a = aliq(base);
+    var devCom = Math.max(0, a * base - ir);
+    var devSem = Math.max(0, aliq(out) * out - ir);
+    var red = 0;
+    if (pj !== null && lucros > 0) {
+      var efPF = (devCom - devSem) / lucros;
+      red = Math.min(devCom, Math.max(0, lucros * (pj + efPF - 0.34)));
+    }
+    var minimo = Math.max(0, devCom - red);
+    var ajuste = minimo - retAno;
+    // carga final sobre os lucros: o imposto que existe por causa dos lucros
+    var finalLucros = Math.max(0, minimo - devSem);
+    document.getElementById('lc-carga').textContent = pct(lucros ? finalLucros / lucros : 0);
+    document.getElementById('lc-tag').textContent = 'de IR sobre os lucros no ano';
+    document.getElementById('lc-ret').textContent = brl(retMes);
+    document.getElementById('lc-ret-s').textContent = retMes ? 'Acima de R$ 50 mil no mês: 10% sobre o total' : 'Até R$ 50 mil no mês, sem retenção';
+    document.getElementById('lc-aliq').textContent = pct(a);
+    document.getElementById('lc-aliq-s').textContent = 'Sobre ' + brl(base) + ' de renda no ano';
+    var msg;
+    if (base <= 600000) {
+      msg = 'Com ' + brl(base) + ' de renda no ano, o sócio não passa de R$ 600 mil e não entra no imposto mínimo.' + (retAno ? ' A retenção dos meses volta como restituição na declaração.' : '');
+    } else if (ajuste > 0.005) {
+      msg = 'Além do retido nos meses, ficam ' + brl(ajuste) + ' para pagar na declaração de ajuste.';
+    } else if (ajuste < -0.005) {
+      msg = 'A retenção dos meses passou do imposto mínimo. A diferença, ' + brl(-ajuste) + ', volta na declaração de ajuste.';
+    } else {
+      msg = 'A retenção dos meses cobre o imposto mínimo do ano.';
+    }
+    document.getElementById('lc-msg').textContent = msg;
+    var L = [
+      ['Lucros recebidos no ano', brl(lucros)],
+      ['Retido na fonte no ano', brl(retAno)],
+      ['Imposto mínimo calculado (' + pct(a) + ')', brl(a * base)],
+      ['(-) IR já devido sobre os outros rendimentos', brl(Math.min(ir, a * base))]
+    ];
+    if (pj !== null) L.push(['(-) Redutor da empresa', brl(red)]);
+    L.push(['Imposto mínimo devido', brl(minimo)]);
+    L.push([ajuste >= 0 ? 'Saldo a pagar no ajuste' : 'Saldo a restituir no ajuste', brl(Math.abs(ajuste)), 'total']);
+    document.getElementById('lc-linhas').innerHTML = L.map(function (r) { return '<div class="fr-linha' + (r[2] ? ' total' : '') + '"><span>' + r[0] + '</span><span>' + r[1] + '</span></div>'; }).join('');
+    if (pj === null && base > 600000) {
+      document.getElementById('lc-aviso').textContent = 'Estimativa sem o redutor da empresa, pela Lei 15.270/2025, para um sócio que recebe lucros de uma única empresa, sobre resultados de 2026 em diante. Se a empresa paga IRPJ e CSLL altos sobre o lucro, o redutor pode diminuir ou zerar o imposto mínimo. Considera a posição da Receita de que a retenção vale também para o Simples Nacional.';
+    } else {
+      document.getElementById('lc-aviso').textContent = 'Estimativa pela Lei 15.270/2025 para um sócio que recebe lucros de uma única empresa, sobre resultados de 2026 em diante. Considera a posição da Receita Federal de que a retenção vale também para o Simples Nacional.';
+    }
+    if (window.innerWidth < 860) { document.querySelector('.fr-out').scrollIntoView({ behavior: 'smooth', block: 'start' }); }
+    if (typeof window.gtag === 'function') { window.gtag('event', 'calculo_ir_lucros', { faixa: base <= 600000 ? 'ate600k' : (base < 1200000 ? '600k-1.2m' : 'acima1.2m') }); }
+  });
+})();
+</script>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-logo">VIPS<span style="color:var(--gold)">.</span> Contabilidade</div>
+  <div class="footer-links">
+    <a href="/#intro">Sobre</a>
+    <a href="/#servicos">Serviços</a>
+    <a href="/#segmentos">Segmentos</a>
+    <a href="/conteudos/">Conteúdos</a>
+    <a href="/#contato">Contato</a>
+    <a href="/escritorio">Escritório</a>
+    <a href="/calculadora-fator-r">Calculadora de fator R</a>
+    <a href="/calculadora-imposto-lucros-dividendos">Calculadora do IR sobre lucros</a>
+    <a href="/estatisticas-pme-sao-paulo">Estatísticas</a>
+    <a href="/privacidade">Privacidade</a>
+  </div>
+  <div class="footer-copy"><p class="footer-serv" style="margin:0 0 6px;line-height:1.9">Serviços: <a href="/contabilidade-empresarial" style="color:rgba(255,255,255,0.62);text-decoration:none">Contabilidade empresarial</a> &nbsp;·&nbsp; <a href="/escrita-fiscal" style="color:rgba(255,255,255,0.62);text-decoration:none">Escrita fiscal</a> &nbsp;·&nbsp; <a href="/departamento-pessoal" style="color:rgba(255,255,255,0.62);text-decoration:none">Departamento pessoal</a> &nbsp;·&nbsp; <a href="/assessoria-societaria" style="color:rgba(255,255,255,0.62);text-decoration:none">Abertura e alteração de empresa</a> &nbsp;·&nbsp; <a href="/planejamento-tributario" style="color:rgba(255,255,255,0.62);text-decoration:none">Planejamento tributário</a></p><p class="footer-seg" style="margin:0 0 10px;line-height:1.9">Contabilidade para: <a href="/contabilidade-para-medicos" style="color:rgba(255,255,255,0.62);text-decoration:none">Médicos e clínicas</a> &nbsp;·&nbsp; <a href="/contabilidade-para-servicos-profissionais" style="color:rgba(255,255,255,0.62);text-decoration:none">Advogados, engenheiros e consultores</a> &nbsp;·&nbsp; <a href="/contabilidade-para-tecnologia" style="color:rgba(255,255,255,0.62);text-decoration:none">Tecnologia</a> &nbsp;·&nbsp; <a href="/contabilidade-para-agencias" style="color:rgba(255,255,255,0.62);text-decoration:none">Agências</a> &nbsp;·&nbsp; <a href="/contabilidade-para-comercio" style="color:rgba(255,255,255,0.62);text-decoration:none">Comércio</a> &nbsp;·&nbsp; <a href="/contabilidade-para-industria" style="color:rgba(255,255,255,0.62);text-decoration:none">Indústria</a> &nbsp;·&nbsp; <a href="/contabilidade-para-construtoras" style="color:rgba(255,255,255,0.62);text-decoration:none">Construtoras</a> &nbsp;·&nbsp; <a href="/contabilidade-para-restaurantes" style="color:rgba(255,255,255,0.62);text-decoration:none">Restaurantes</a> &nbsp;·&nbsp; <a href="/contabilidade-para-transportadoras" style="color:rgba(255,255,255,0.62);text-decoration:none">Transportadoras</a> &nbsp;·&nbsp; <a href="/contabilidade-para-escolas" style="color:rgba(255,255,255,0.62);text-decoration:none">Escolas</a> &nbsp;·&nbsp; <a href="/contabilidade-para-holdings" style="color:rgba(255,255,255,0.62);text-decoration:none">Holdings</a> &nbsp;·&nbsp; <a href="/contabilidade-para-terceiro-setor" style="color:rgba(255,255,255,0.62);text-decoration:none">Terceiro setor</a></p><p class="footer-social" style="margin:0 0 8px"><a href="https://www.linkedin.com/company/vipscontabilidade/" target="_blank" rel="noopener" style="color:rgba(255,255,255,0.62);text-decoration:none">LinkedIn</a> &nbsp;·&nbsp; <a href="https://www.instagram.com/vipscontabilidade/" target="_blank" rel="noopener" style="color:rgba(255,255,255,0.62);text-decoration:none">Instagram</a> &nbsp;·&nbsp; <a href="https://www.facebook.com/vipscontabilidadesp" target="_blank" rel="noopener" style="color:rgba(255,255,255,0.62);text-decoration:none">Facebook</a></p>© 1995–2026 VIPS Contabilidade. Todos os direitos reservados.</div>
+</footer>
+
+<script>
+  function toggleMenu() {
+    document.getElementById('navmenu').classList.toggle('open');
+  }
+</script>
+
+
+<!-- Eventos do GA4: cliques no WhatsApp -->
+<script>
+document.addEventListener('click', function (e) {
+  var a = e.target.closest && e.target.closest('a[href*="wa.me"], a[href*="api.whatsapp.com"]');
+  if (a && typeof window.gtag === 'function') {
+    window.gtag('event', 'whatsapp_click', { link_url: a.href, page_path: location.pathname });
+  }
+  if (a && typeof window.fbq === 'function') { window.fbq('track', 'Contact'); }
+});
+</script>
+
+
+<!-- Aviso de cookies (LGPD) -->
+<style>
+  #ck { position: fixed; left: 16px; bottom: 16px; z-index: 9999; max-width: 340px;
+        background: #002147; color: rgba(255,255,255,0.85); border: 1px solid rgba(170,152,96,0.35);
+        border-radius: 8px; padding: 12px 14px; font: 400 12px/1.5 Inter, -apple-system, sans-serif;
+        box-shadow: 0 6px 24px rgba(0,0,0,0.18); display: none; }
+  #ck a { color: #AA9860; text-decoration: underline; text-underline-offset: 2px; }
+  #ck .ck-b { display: flex; gap: 8px; margin-top: 8px; }
+  #ck button { font: 600 11px Inter, sans-serif; letter-spacing: 0.04em; border-radius: 4px;
+               padding: 6px 12px; cursor: pointer; border: 1px solid #AA9860; }
+  #ck .ck-ok { background: #AA9860; color: #002147; }
+  #ck .ck-no { background: transparent; color: rgba(255,255,255,0.75); border-color: rgba(255,255,255,0.25); }
+  @media (max-width: 480px) { #ck { left: 12px; right: 12px; bottom: 12px; max-width: none; } }
+</style>
+<div id="ck" role="region" aria-label="Aviso de cookies">
+  Usamos cookies de análise e de anúncios para entender como o site é usado e medir nossas campanhas. <a href="/privacidade">Saiba mais</a>.
+  <div class="ck-b">
+    <button type="button" class="ck-ok">Ok</button>
+    <button type="button" class="ck-no">Recusar</button>
+  </div>
+</div>
+<script>
+(function () {
+  var KEY = 'vips_ck', GA = 'G-FN7YP6WKZQ', PX = '1854481898885105', v = null;
+  try { v = localStorage.getItem(KEY); } catch (e) {}
+  if (v === 'no') { window['ga-disable-' + GA] = true; }
+  function pixel() {
+    if (window.fbq) return;
+    var n = window.fbq = function () { n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments); };
+    if (!window._fbq) window._fbq = n;
+    n.push = n; n.loaded = true; n.version = '2.0'; n.queue = [];
+    var s = document.createElement('script'); s.async = true;
+    s.src = 'https://connect.facebook.net/en_US/fbevents.js';
+    document.head.appendChild(s);
+    window.fbq('init', PX);
+    window.fbq('track', 'PageView');
+  }
+  if (v === 'ok2') { pixel(); }
+  var box = document.getElementById('ck');
+  if ((!v || v === 'ok') && box) { box.style.display = 'block'; }
+  function save(val) { try { localStorage.setItem(KEY, val); } catch (e) {} if (box) box.style.display = 'none'; }
+  if (box) {
+    box.querySelector('.ck-ok').addEventListener('click', function () { save('ok2'); pixel(); });
+    box.querySelector('.ck-no').addEventListener('click', function () {
+      save('no');
+      window['ga-disable-' + GA] = true;
+      if (typeof window.gtag === 'function') { window.gtag('consent', 'update', { analytics_storage: 'denied', ad_storage: 'denied' }); }
+    });
+  }
+})();
+</script>
+
+
+<!-- Botão fixo de WhatsApp -->
+<style>
+  .wa-fab { position: fixed; right: 18px; bottom: 18px; z-index: 900; width: 52px; height: 52px;
+            border-radius: 50%; background: #002147; color: #fff; border: 1px solid rgba(170,152,96,0.55);
+            display: flex; align-items: center; justify-content: center;
+            box-shadow: 0 6px 20px rgba(0,33,71,0.25); transition: transform 0.2s, background 0.2s; }
+  .wa-fab:hover { transform: translateY(-2px); background: #0a2d58; }
+  @media (max-width: 480px) { .wa-fab { right: 14px; bottom: 14px; width: 48px; height: 48px; } }
+  @media print { .wa-fab { display: none; } }
+</style>
+<a href="https://wa.me/5511956081408?text=Ol%C3%A1%21%20Usei%20a%20calculadora%20de%20IR%20sobre%20lucros%20do%20site%20e%20quero%20fazer%20a%20conta%20completa.%0ARegime%20da%20empresa%3A%20%0AN%C3%BAmero%20de%20s%C3%B3cios%3A%20" class="wa-fab" target="_blank" rel="noopener" aria-label="Falar com a VIPS pelo WhatsApp"><svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true" focusable="false"><path fill="currentColor" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></a>
+</body>
+</html>
