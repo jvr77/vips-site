@@ -311,6 +311,7 @@ document.addEventListener('click', function (e) {
   if (a && typeof window.gtag === 'function') {
     window.gtag('event', 'whatsapp_click', { link_url: a.href, page_path: location.pathname });
   }
+  if (a && typeof window.fbq === 'function') { window.fbq('track', 'Contact'); }
 });
 </script>
 
@@ -331,7 +332,7 @@ document.addEventListener('click', function (e) {
   @media (max-width: 480px) { #ck { left: 12px; right: 12px; bottom: 12px; max-width: none; } }
 </style>
 <div id="ck" role="region" aria-label="Aviso de cookies">
-  Usamos cookies de análise para entender como o site é usado. <a href="/privacidade">Saiba mais</a>.
+  Usamos cookies de análise e de anúncios para entender como o site é usado e medir nossas campanhas. <a href="/privacidade">Saiba mais</a>.
   <div class="ck-b">
     <button type="button" class="ck-ok">Ok</button>
     <button type="button" class="ck-no">Recusar</button>
@@ -339,14 +340,26 @@ document.addEventListener('click', function (e) {
 </div>
 <script>
 (function () {
-  var KEY = 'vips_ck', GA = 'G-FN7YP6WKZQ', v = null;
+  var KEY = 'vips_ck', GA = 'G-FN7YP6WKZQ', PX = '1854481898885105', v = null;
   try { v = localStorage.getItem(KEY); } catch (e) {}
   if (v === 'no') { window['ga-disable-' + GA] = true; }
+  function pixel() {
+    if (window.fbq) return;
+    var n = window.fbq = function () { n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments); };
+    if (!window._fbq) window._fbq = n;
+    n.push = n; n.loaded = true; n.version = '2.0'; n.queue = [];
+    var s = document.createElement('script'); s.async = true;
+    s.src = 'https://connect.facebook.net/en_US/fbevents.js';
+    document.head.appendChild(s);
+    window.fbq('init', PX);
+    window.fbq('track', 'PageView');
+  }
+  if (v === 'ok2') { pixel(); }
   var box = document.getElementById('ck');
-  if (!v && box) { box.style.display = 'block'; }
+  if ((!v || v === 'ok') && box) { box.style.display = 'block'; }
   function save(val) { try { localStorage.setItem(KEY, val); } catch (e) {} if (box) box.style.display = 'none'; }
   if (box) {
-    box.querySelector('.ck-ok').addEventListener('click', function () { save('ok'); });
+    box.querySelector('.ck-ok').addEventListener('click', function () { save('ok2'); pixel(); });
     box.querySelector('.ck-no').addEventListener('click', function () {
       save('no');
       window['ga-disable-' + GA] = true;
